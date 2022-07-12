@@ -26,3 +26,11 @@ require __DIR__.'/auth.php';
 Route::view('/{any}', 'dashboard')
     ->middleware('auth')
     ->where('any', '.*');
+
+Route::get('/companies',function() {
+    return view('companies');
+});
+
+Route::get('/users',function() {
+    return view('users');
+});

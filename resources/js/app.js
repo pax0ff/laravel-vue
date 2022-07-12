@@ -8,6 +8,6 @@ import CompaniesIndex from './components/companies/CompaniesIndex'
 
 createApp({
     components: {
-        CompaniesIndex
+        CompaniesIndex,
     }
 }).use(router).mount('#app')
