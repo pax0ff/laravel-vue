@@ -72,7 +72,7 @@ export default {
         onMounted(getCompanies)
 
         const deleteCompany = async (id) => {
-            if (!window.confirm('Are you sure?')) {
+            if (!window.confirm('Stergi '+id+'?')) {
                 return
             }
 
