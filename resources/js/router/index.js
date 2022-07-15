@@ -9,7 +9,7 @@ import UsersEdit from "../components/users/UsersEdit";
 
 const routes = [
     {
-        path: '/dashboard',
+        path: '/companies',
         name: 'companies.index',
         component: CompaniesIndex
     },
@@ -35,13 +35,16 @@ const routes = [
         component: UsersCreate,
     },
     {
-        path: 'users/:id/edit',
+        path: '/users/:id/edit',
         name: 'users.edit',
         component: UsersEdit
     }
 ]
 
-export default createRouter({
+const route =  createRouter({
     history: createWebHistory(),
-    routes
+    routes: routes
 })
+
+export default route;
+

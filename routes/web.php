@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
+/*x
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -13,24 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
+//Route::get('/', function () {
+//    return view('dashboard');
+//});
+//
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware(['auth'])->name('dashboard');
+//
 require __DIR__.'/auth.php';
 
-Route::view('/{any}', 'dashboard')
-    ->middleware('auth')
-    ->where('any', '.*');
+Route::get('/{any}', [\App\Http\Controllers\Main::class,'index'])
+    ->where('any', '^(?!api).*$');
 
-Route::get('/companies',function() {
-    return view('companies');
-});
-
-Route::get('/users',function() {
-    return view('users');
-})->name('users');
+//Route::get('/companies',function() {
+//    return view('companies');
+//});
+//
+//Route::get('/users',function() {
+//    return view('users');
+//})->name('users');
