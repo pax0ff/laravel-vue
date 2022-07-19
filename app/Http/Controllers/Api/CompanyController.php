@@ -24,7 +24,7 @@ class CompanyController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return CompanyResource
      */
     public function store(CompanyRequest $request)
     {
@@ -37,7 +37,7 @@ class CompanyController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Company  $company
-     * @return \Illuminate\Http\Response
+     * @return CompanyResource
      */
     public function show(Company $company)
     {
@@ -49,7 +49,7 @@ class CompanyController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Company  $company
-     * @return \Illuminate\Http\Response
+     * @return CompanyResource
      */
     public function update(CompanyRequest $request, Company $company)
     {

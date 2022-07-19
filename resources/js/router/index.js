@@ -9,7 +9,7 @@ import UsersEdit from "../components/users/UsersEdit";
 
 const routes = [
     {
-        path: '/companies',
+        path: '/',
         name: 'companies.index',
         component: CompaniesIndex
     },
@@ -24,21 +24,21 @@ const routes = [
         component: CompaniesEdit,
         props: true
     },
-    {
-        path: '/users',
-        name: 'users.index',
-        component: UsersIndex
-    },
-    {
-        path: '/users/create',
-        name: 'users.create',
-        component: UsersCreate,
-    },
-    {
-        path: '/users/:id/edit',
-        name: 'users.edit',
-        component: UsersEdit
-    }
+    // {
+    //     path: '/users',
+    //     name: 'users.index',
+    //     component: UsersIndex
+    // },
+    // {
+    //     path: '/users/create',
+    //     name: 'users.create',
+    //     component: UsersCreate,
+    // },
+    // {
+    //     path: '/users/:id/edit',
+    //     name: 'users.edit',
+    //     component: UsersEdit
+    // }
 ]
 
 const route =  createRouter({

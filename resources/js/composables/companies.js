@@ -45,6 +45,14 @@ export default function useCompanies() {
     const destroyCompany = async (id) => {
         await axios.delete('/api/companies/' + id)
     }
+    const deleteCompany = async (id) => {
+        if (!window.confirm('Stergi '+id+'?')) {
+            return
+        }
+
+        await destroyCompany(id);
+        await getCompanies();
+    }
 
 
     return {
@@ -55,6 +63,7 @@ export default function useCompanies() {
         getCompany,
         storeCompany,
         updateCompany,
-        destroyCompany
+        destroyCompany,
+        deleteCompany
     }
 }
