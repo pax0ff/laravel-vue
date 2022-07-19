@@ -19,10 +19,7 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100" id="app">
-{{--            @include('layouts.navigation')--}}
-{{--            <router-view v-slot="{ Component, route }">--}}
-{{--                <component :is="Component" view-prop="value"></component>--}}
-{{--            </router-view>--}}
+            <navbar></navbar>
             <router-view></router-view>
         </div>
     </body>

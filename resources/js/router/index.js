@@ -14,6 +14,11 @@ const routes = [
         component: CompaniesIndex
     },
     {
+        path: '/companies',
+        name: 'companies.index',
+        component: CompaniesIndex
+    },
+    {
         path: '/companies/create',
         name: 'companies.create',
         component: CompaniesCreate
@@ -24,21 +29,21 @@ const routes = [
         component: CompaniesEdit,
         props: true
     },
-    // {
-    //     path: '/users',
-    //     name: 'users.index',
-    //     component: UsersIndex
-    // },
-    // {
-    //     path: '/users/create',
-    //     name: 'users.create',
-    //     component: UsersCreate,
-    // },
-    // {
-    //     path: '/users/:id/edit',
-    //     name: 'users.edit',
-    //     component: UsersEdit
-    // }
+    {
+        path: '/users',
+        name: 'users.index',
+        component: UsersIndex
+    },
+    {
+        path: '/users/create',
+        name: 'users.create',
+        component: UsersCreate,
+    },
+    {
+        path: '/users/:id/edit',
+        name: 'users.edit',
+        component: UsersEdit
+    }
 ]
 
 const route =  createRouter({

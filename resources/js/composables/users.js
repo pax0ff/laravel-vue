@@ -46,6 +46,15 @@ export default function useUsers() {
         await axios.delete('/api/users/' + id)
     }
 
+    const deleteUser = async (id) => {
+        if (!window.confirm('Stergi '+id+'?')) {
+            return
+        }
+
+        await destroyUser(id);
+        await getUsers();
+    }
+
 
     return {
         users,
@@ -55,6 +64,7 @@ export default function useUsers() {
         getUser,
         storeUser,
         updateUser,
-        destroyUser
+        destroyUser,
+        deleteUser
     }
 }

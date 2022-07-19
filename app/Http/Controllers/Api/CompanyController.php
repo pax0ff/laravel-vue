@@ -7,13 +7,15 @@ use App\Http\Requests\CompanyRequest;
 use App\Http\Resources\CompanyResource;
 use App\Models\Company;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Http\Response;
 
 class CompanyController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+     * @return AnonymousResourceCollection
      */
     public function index()
     {
@@ -23,10 +25,10 @@ class CompanyController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param CompanyRequest $request
      * @return CompanyResource
      */
-    public function store(CompanyRequest $request)
+    public function store(CompanyRequest $request): CompanyResource
     {
         $company = Company::create($request->validated());
 
@@ -36,10 +38,10 @@ class CompanyController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Company  $company
+     * @param Company $company
      * @return CompanyResource
      */
-    public function show(Company $company)
+    public function show(Company $company): CompanyResource
     {
         return new CompanyResource($company);
     }
@@ -47,11 +49,11 @@ class CompanyController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Company  $company
+     * @param Request $request
+     * @param Company $company
      * @return CompanyResource
      */
-    public function update(CompanyRequest $request, Company $company)
+    public function update(CompanyRequest $request, Company $company): CompanyResource
     {
         $company->update($request->validated());
 
@@ -61,8 +63,8 @@ class CompanyController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Company  $company
-     * @return \Illuminate\Http\Response
+     * @param Company $company
+     * @return Response
      */
     public function destroy(Company $company)
     {
