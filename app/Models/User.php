@@ -9,12 +9,6 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var string[]
-     */
-
     use HasFactory;
 
     protected $fillable = [
@@ -22,6 +16,7 @@ class User extends Model
         'email',
         'password'
     ];
+
 
 
 }

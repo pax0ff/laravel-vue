@@ -6,67 +6,53 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\UsersResource;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
+use App\Http\Requests\UsersRequest;
+use Illuminate\Support\Facades\Hash;
 
 class UsersController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
-     */
-    public function index()
+
+    public function index(): AnonymousResourceCollection
     {
         return UsersResource::collection(User::all());
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param Request $request
-     * @return UsersResource
-     */
-    public function store(Request $request)
+    public function store(Request $request): UsersResource
     {
-        $user = User::create($request->validated());
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $password = $request->input('password');
+
+        $inputs = array(
+            'name' => $name,
+            'email' => $email,
+            'password' => Hash::make($password)
+        );
+        $user = User::create($request->all());
 
         return new UsersResource($user);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param User $user
-     * @return UsersResource
-     */
+
+
     public function show(User $user): UsersResource
     {
         return new UsersResource($user);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param Request $request
-     * @param User $user
-     * @return UsersResource
-     */
-    public function update(Request $request, User $user)
+    public function update(Request $request, User $user): UsersResource
     {
-        $user->update($request->validated());
+        $user->update($request->all());
 
         return new UsersResource($user);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param User $user
-     * @return Response
-     */
-    public function destroy(User $user)
+    public function destroy(User $user): Response
     {
-        $user->delete();
+        $userID = $user->id;
+        $user->delete($userID);
 
         return response()->noContent();
     }

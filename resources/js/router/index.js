@@ -9,11 +9,6 @@ import UsersEdit from "../components/users/UsersEdit";
 
 const routes = [
     {
-        path: '/',
-        name: 'companies.index',
-        component: CompaniesIndex
-    },
-    {
         path: '/companies',
         name: 'companies.index',
         component: CompaniesIndex
@@ -42,7 +37,8 @@ const routes = [
     {
         path: '/users/:id/edit',
         name: 'users.edit',
-        component: UsersEdit
+        component: UsersEdit,
+        props: true
     }
 ]
 

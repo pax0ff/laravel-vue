@@ -10,7 +10,7 @@
     <form class="space-y-6 container" @submit.prevent="saveUser">
             <div class="space-y-4 rounded-md">
                 <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nume</label>
                     <div class="col-sm-3 mt-1">
                         <input type="text" name="name" id="name"
                                class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300
@@ -30,7 +30,7 @@
                 </div>
 
                 <div>
-                    <label for="address" class="block text-sm font-medium text-gray-700">Password</label>
+                    <label for="address" class="block text-sm font-medium text-gray-700">Parola</label>
                     <div class="col-sm-5 mt-1 inline-flex">
                         <input type="password" name="password" id="password"
                                class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300
@@ -51,7 +51,7 @@
                 class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase
                 bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out
                 hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
-            Create
+            Adauga
         </button>
     </form>
 </template>
@@ -61,7 +61,7 @@ import { reactive } from "vue";
 import useUsers from "../../composables/users";
 
 export default {
-    password:'',
+    // password:'',
     setup() {
         const form = reactive({
             'name': '',
@@ -69,10 +69,11 @@ export default {
             'password': '',
         })
 
-        const { errors, storeUser } = useUsers()
+        const {errors, storeUser} = useUsers()
 
         const saveUser = async () => {
             await storeUser({...form});
+            console.log(storeUser({...form}))
         }
 
         return {
@@ -81,13 +82,14 @@ export default {
             saveUser,
             password: ''
         }
-    },
-    methods: {
-        generatePassword() {
-            let inputPwd = document.getElementById('password');
-            this.password= Math.random().toString(36).slice(-8)
-            inputPwd.value = this.password
-        }
     }
+    // },
+    // methods: {
+    //     generatePassword() {
+    //         let inputPwd = document.getElementById('password');
+    //         this.password= Math.random().toString(36).slice(-8)
+    //         inputPwd.value = this.password
+    //     }
+    // }
 }
 </script>
