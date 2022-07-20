@@ -6,8 +6,14 @@ import CompaniesEdit from '../components/companies/CompaniesEdit'
 import UsersIndex from "../components/users/UsersIndex";
 import UsersCreate from "../components/users/UsersCreate";
 import UsersEdit from "../components/users/UsersEdit";
+import LoginIndex from "../components/login/LoginIndex";
 
 const routes = [
+    {
+        path: '/',
+        name: 'login.index',
+        component: LoginIndex
+    },
     {
         path: '/companies',
         name: 'companies.index',
