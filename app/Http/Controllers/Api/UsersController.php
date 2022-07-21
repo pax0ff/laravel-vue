@@ -25,11 +25,6 @@ class UsersController extends Controller
         $email = $request->input('email');
         $password = $request->input('password');
 
-        $inputs = array(
-            'name' => $name,
-            'email' => $email,
-            'password' => Hash::make($password)
-        );
         $user = User::create($request->all());
 
         return new UsersResource($user);

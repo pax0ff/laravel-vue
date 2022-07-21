@@ -10,7 +10,8 @@
     <form class="space-y-6 container" @submit.prevent="saveUser">
             <div class="space-y-4 rounded-md">
                 <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700">Nume</label>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nume
+                    </label>
                     <div class="col-sm-3 mt-1">
                         <input type="text" name="name" id="name"
                                class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300
@@ -73,7 +74,6 @@ export default {
 
         const saveUser = async () => {
             await storeUser({...form});
-            console.log(storeUser({...form}))
         }
 
         return {

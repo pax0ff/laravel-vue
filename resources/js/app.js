@@ -6,11 +6,12 @@ import routes from './router/index'
 import CompaniesIndex from './components/companies/CompaniesIndex'
 import Navbar from "./templates/Navbar"
 import UsersIndex from "./components/users/UsersIndex";
-
+import LoginIndex from "./components/login/LoginIndex";
 createApp({
     components: {
         CompaniesIndex,
         UsersIndex,
+        LoginIndex,
         Navbar
     }
 }).use(routes,Bootstrap,jqr).mount('#app')

@@ -19698,9 +19698,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 return storeUser(_objectSpread({}, form));
 
               case 2:
-                console.log(storeUser(_objectSpread({}, form)));
-
-              case 3:
               case "end":
                 return _context.stop();
             }
@@ -20364,7 +20361,7 @@ var _hoisted_2 = {
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "for": "name",
   "class": "block text-sm font-medium text-gray-700"
-}, "Nume", -1
+}, "Nume ", -1
 /* HOISTED */
 );
 
@@ -20733,7 +20730,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_companies_CompaniesIndex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/companies/CompaniesIndex */ "./resources/js/components/companies/CompaniesIndex.vue");
 /* harmony import */ var _templates_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./templates/Navbar */ "./resources/js/templates/Navbar.vue");
 /* harmony import */ var _components_users_UsersIndex__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/users/UsersIndex */ "./resources/js/components/users/UsersIndex.vue");
+/* harmony import */ var _components_login_LoginIndex__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/login/LoginIndex */ "./resources/js/components/login/LoginIndex.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
 
 
 
@@ -20746,6 +20745,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
   components: {
     CompaniesIndex: _components_companies_CompaniesIndex__WEBPACK_IMPORTED_MODULE_4__["default"],
     UsersIndex: _components_users_UsersIndex__WEBPACK_IMPORTED_MODULE_6__["default"],
+    LoginIndex: _components_login_LoginIndex__WEBPACK_IMPORTED_MODULE_7__["default"],
     Navbar: _templates_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"]
   }
 }).use(_router_index__WEBPACK_IMPORTED_MODULE_3__["default"], bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__["default"], (jquery__WEBPACK_IMPORTED_MODULE_1___default())).mount('#app');

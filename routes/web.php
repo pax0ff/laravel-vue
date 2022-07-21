@@ -17,19 +17,11 @@ use Illuminate\Support\Facades\Route;
 //    return view('dashboard');
 //});
 //
-//Route::get('/dashboard', function () {
+//Route::get('/', function () {
 //    return view('dashboard');
-//})->middleware(['auth'])->name('dashboard');
-//
+//})->middleware(['auth'])->name('home');
+
 require __DIR__.'/auth.php';
 
 Route::get('/{any}', [\App\Http\Controllers\Main::class,'index'])
     ->where('any', '^(?!api).*$');
-
-//Route::get('/companies',function() {
-//    return view('companies');
-//});
-//
-//Route::get('/users',function() {
-//    return view('users');
-//})->name('users');
