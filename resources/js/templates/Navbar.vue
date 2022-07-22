@@ -9,6 +9,9 @@
                     <a class="nav-item nav-link active" href="/">Acasa <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="/companies">Companies</a>
                     <a class="nav-item nav-link" href="/users">Users</a>
+                    <a class="nav-item nav-link" href="/users/login">Login</a>
+                    <a class="nav-item nav-link" href="/users/register">Register</a>
+                    <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
                 </div>
             </div>
         </nav>

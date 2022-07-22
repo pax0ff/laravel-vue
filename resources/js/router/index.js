@@ -7,6 +7,10 @@ import UsersIndex from "../components/users/UsersIndex";
 import UsersCreate from "../components/users/UsersCreate";
 import UsersEdit from "../components/users/UsersEdit";
 import LoginIndex from "../components/login/LoginIndex";
+import UsersRegistraiton from "../components/users/UsersRegistration";
+import UsersLogin from "../components/users/UsersLogin";
+import DashboardIndex from "../components/dashboard/DashboardIndex";
+
 
 const routes = [
     {
@@ -45,6 +49,21 @@ const routes = [
         name: 'users.edit',
         component: UsersEdit,
         props: true
+    },
+    {
+        path: '/users/register',
+        name: 'users.registration',
+        component: UsersRegistraiton
+    },
+    {
+        path: '/users/login',
+        name: 'users.login',
+        component: UsersLogin
+    },
+    {
+        path: '/dashboard',
+        name: 'dashboard.index',
+        component: DashboardIndex
     }
 ]
 

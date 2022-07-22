@@ -10,7 +10,6 @@ export default function useUsers() {
 
     const getUsers = async () => {
         let response = await axios.get('/api/users')
-
         users.value = response.data.data;
     }
 

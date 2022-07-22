@@ -21,9 +21,6 @@ class UsersController extends Controller
 
     public function store(Request $request): UsersResource
     {
-        $name = $request->input('name');
-        $email = $request->input('email');
-        $password = $request->input('password');
 
         $user = User::create($request->all());
 
@@ -50,5 +47,9 @@ class UsersController extends Controller
         $user->delete($userID);
 
         return response()->noContent();
+    }
+
+    public function login(User $user) {
+
     }
 }
