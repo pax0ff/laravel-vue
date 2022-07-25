@@ -8,8 +8,6 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
-use App\Http\Requests\UsersRequest;
-use Illuminate\Support\Facades\Hash;
 
 class UsersController extends Controller
 {

@@ -7,11 +7,13 @@ import CompaniesIndex from './components/companies/CompaniesIndex'
 import Navbar from "./templates/Navbar"
 import UsersIndex from "./components/users/UsersIndex";
 import LoginIndex from "./components/login/LoginIndex";
+import StoreIndex from "./components/store/StoreIndex";
 createApp({
     components: {
         CompaniesIndex,
         UsersIndex,
         LoginIndex,
+        StoreIndex,
         Navbar
     }
 }).use(routes,Bootstrap,jqr).mount('#app')

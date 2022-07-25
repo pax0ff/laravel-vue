@@ -6,7 +6,7 @@
     </p>
   </div>
 </div>
-
+<div class="container">
     <form class="space-y-6" @submit.prevent="saveCompany">
         <div class="space-y-4 rounded-md shadow-sm">
             <div>
@@ -57,6 +57,7 @@
             Create
         </button>
     </form>
+</div>
 </template>
 
 <script>

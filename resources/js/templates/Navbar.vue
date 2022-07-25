@@ -12,6 +12,7 @@
                     <a class="nav-item nav-link" href="/users/login">Login</a>
                     <a class="nav-item nav-link" href="/users/register">Register</a>
                     <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
+                    <a class="nav-item nav-link" href="/store">Store</a>
                 </div>
             </div>
         </nav>

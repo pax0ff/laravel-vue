@@ -10,7 +10,7 @@ import LoginIndex from "../components/login/LoginIndex";
 import UsersRegistraiton from "../components/users/UsersRegistration";
 import UsersLogin from "../components/users/UsersLogin";
 import DashboardIndex from "../components/dashboard/DashboardIndex";
-
+import StoreIndex from "../components/store/StoreIndex";
 
 const routes = [
     {
@@ -64,7 +64,13 @@ const routes = [
         path: '/dashboard',
         name: 'dashboard.index',
         component: DashboardIndex
+    },
+    {
+        path: '/store',
+        name: 'store.index',
+        component: StoreIndex
     }
+
 ]
 
 const route =  createRouter({
