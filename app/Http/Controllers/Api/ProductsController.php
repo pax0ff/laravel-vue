@@ -14,7 +14,7 @@ class ProductsController extends Controller
 
     public function index(): AnonymousResourceCollection
     {
-        return Products::collection(Products::all());
+        return ProductResource::collection(Products::all());
     }
 
 

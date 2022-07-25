@@ -6,8 +6,9 @@
 <!--                    <router-link :to="{ name: 'store.create' }" class="text-sm font-medium">Adauga produs</router-link>-->
                 </div>
             </div>
-            <template v-for="item in products" :key="item.id">
+
                 <div class="row">
+                    <template v-for="item in products" :key="item.id">
                     <div class="col-md-4 mt-2">
                         <div class="card">
                             <div class="card-body">
@@ -22,13 +23,13 @@
                             <div class="card-body bg-light text-center">
                                 <div class="mb-2">
                                     <h6 class="font-weight-semibold mb-2">
-                                        <a href="#" class="text-default mb-2" data-abc="true">Toshiba Notebook with 500GB HDD & 8GB RAM</a>
+                                        <a href="#" class="text-default mb-2" data-abc="true">{{ item.name }}</a>
                                     </h6>
 
-                                    <a href="#" class="text-muted" data-abc="true">Laptops & Notebooks</a>
+                                    <a href="#" class="text-muted" data-abc="true">{{ item.category_id }}</a>
                                 </div>
 
-                                <h3 class="mb-0 font-weight-semibold">$250.99</h3>
+                                <h3 class="mb-0 font-weight-semibold">{{ item.price + " lei"}}</h3>
 
                                 <div>
                                     <i class="fa fa-star star"></i>
@@ -43,8 +44,9 @@
                             </div>
                         </div>
                     </div>
+                    </template>
                 </div>
-            </template>
+
 
 <!--                <tbody class="bg-white divide-y divide-gray-200 divide-solid">-->
 <!--                <template v-for="item in products" :key="item.id">-->

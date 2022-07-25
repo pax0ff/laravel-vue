@@ -20478,18 +20478,67 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 /* HOISTED */
 );
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-4 mt-2\"><div class=\"card\"><div class=\"card-body\"><div class=\"card-img-actions\"><img src=\"https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png\" class=\"card-img img-fluid\" width=\"96\" height=\"350\" alt=\"\"></div></div><div class=\"card-body bg-light text-center\"><div class=\"mb-2\"><h6 class=\"font-weight-semibold mb-2\"><a href=\"#\" class=\"text-default mb-2\" data-abc=\"true\">Toshiba Notebook with 500GB HDD &amp; 8GB RAM</a></h6><a href=\"#\" class=\"text-muted\" data-abc=\"true\">Laptops &amp; Notebooks</a></div><h3 class=\"mb-0 font-weight-semibold\">$250.99</h3><div><i class=\"fa fa-star star\"></i><i class=\"fa fa-star star\"></i><i class=\"fa fa-star star\"></i><i class=\"fa fa-star star\"></i></div><div class=\"text-muted mb-3\">34 reviews</div><button type=\"button\" class=\"btn bg-cart\"><i class=\"fa fa-cart-plus mr-2\"></i> Add to cart</button></div></div></div>", 1);
+var _hoisted_4 = {
+  "class": "row"
+};
+var _hoisted_5 = {
+  "class": "card"
+};
 
-var _hoisted_5 = [_hoisted_4];
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "card-body"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "card-img-actions"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png",
+  "class": "card-img img-fluid",
+  width: "96",
+  height: "350",
+  alt: ""
+})])], -1
+/* HOISTED */
+);
+
+var _hoisted_7 = {
+  "class": "card-body bg-light text-center"
+};
+var _hoisted_8 = {
+  "class": "mb-2"
+};
+var _hoisted_9 = {
+  "class": "font-weight-semibold mb-2"
+};
+var _hoisted_10 = {
+  href: "#",
+  "class": "text-default mb-2",
+  "data-abc": "true"
+};
+var _hoisted_11 = {
+  href: "#",
+  "class": "text-muted",
+  "data-abc": "true"
+};
+var _hoisted_12 = {
+  "class": "mb-0 font-weight-semibold"
+};
+
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div><i class=\"fa fa-star star\"></i><i class=\"fa fa-star star\"></i><i class=\"fa fa-star star\"></i><i class=\"fa fa-star star\"></i></div><div class=\"text-muted mb-3\">34 reviews</div><button type=\"button\" class=\"btn bg-cart\"><i class=\"fa fa-cart-plus mr-2\"></i> Add to cart</button>", 3);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.products, function (item) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.products, function (item) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: item.id,
-      "class": "row"
-    }, _hoisted_5);
+      "class": "col-md-4 mt-2"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.name), 1
+    /* TEXT */
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.category_id), 1
+    /* TEXT */
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.price + " lei"), 1
+    /* TEXT */
+    ), _hoisted_13])])]);
   }), 128
   /* KEYED_FRAGMENT */
-  )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                <tbody class=\"bg-white divide-y divide-gray-200 divide-solid\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                <template v-for=\"item in products\" :key=\"item.id\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                    <tr class=\"bg-white\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            {{ item.name }}"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        </td>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                            {{ item.email }}&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        </td>&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                            {{ item.address }}&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        </td>&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                            {{ item.website }}&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        </td>&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <router-link :to=\"{ name: 'products.edit', params: { id: item.id } }\""), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                         class=\"mr-2 inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                Editeaza"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            </router-link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <button @click=\"deleteProduct(item.id)\""), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                    class=\"inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                Sterge</button>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        </td>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                    </tr>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                </template>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                </tbody>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            </table>")])]);
+  ))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                <tbody class=\"bg-white divide-y divide-gray-200 divide-solid\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                <template v-for=\"item in products\" :key=\"item.id\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                    <tr class=\"bg-white\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            {{ item.name }}"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        </td>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                            {{ item.email }}&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        </td>&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                            {{ item.address }}&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        </td>&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                            {{ item.website }}&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("&lt;!&ndash;                        </td>&ndash;&gt;"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        <td class=\"px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <router-link :to=\"{ name: 'products.edit', params: { id: item.id } }\""), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                         class=\"mr-2 inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                Editeaza"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            </router-link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <button @click=\"deleteProduct(item.id)\""), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                    class=\"inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                Sterge</button>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        </td>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                    </tr>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                </template>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                </tbody>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            </table>")])]);
 }
 
 /***/ }),
