@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class ProductResource extends \Illuminate\Http\Resources\Json\JsonResource
 {
-    public function toArray($request)
-    {
-        return parent::toArray($request);
-    }
+//    public function toArray($request)
+//    {
+//        return parent::toArray($request);
+//    }
 }

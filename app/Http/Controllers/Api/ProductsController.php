@@ -7,43 +7,52 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductsRequest;
 use App\Http\Resources\ProductResource;
 use App\Models\Products;
+use Illuminate\Support\Facades\DB;
 
 
 class ProductsController extends Controller
 {
 
-    public function index(): AnonymousResourceCollection
+    public function index(): \Illuminate\Support\Collection
     {
-        return ProductResource::collection(Products::all());
+        return (new \App\Models\Products)->getProd();
     }
+//
+//    public function store(ProductsRequest $request): ProductResource
+//    {
+//        $product = Products::create($request->validated());
+//
+//        return new ProductResource($product);
+//    }
+//
+//
+//    public function show(Products $product): ProductResource
+//    {
+//        return new ProductResource($product);
+//    }
+//
+//    public function update(ProductsRequest $request, Products $product): ProductResource
+//    {
+//        $product->update($request->validated());
+//
+//        return new ProductResource($product);
+//    }
+//
+//
+//    public function destroy(Products $product)
+//    {
+//        $product->delete();
+//
+//        return response()->noContent();
+//    }
 
-
-    public function store(ProductsRequest $request): ProductResource
+    public function showProducts(): \Illuminate\Support\Collection
     {
-        $company = Products::create($request->validated());
-
-        return new ProductResource($company);
-    }
-
-
-    public function show(Products $company): ProductResource
-    {
-        return new ProductResource($company);
-    }
-
-    public function update(ProductsRequest $request, Products $company): ProductResource
-    {
-        $company->update($request->validated());
-
-        return new ProductResource($company);
-    }
-
-
-    public function destroy(Products $company)
-    {
-        $company->delete();
-
-        return response()->noContent();
+        $products = DB::table('products')
+            ->leftJoin('category','category.id','=','products.category_id')
+            ->selectRaw('category.name as cat_name,products.id,products.name,products.price,products.stock,products.sku')
+            ->get();
+        return collect($products);
     }
 
 

@@ -14,6 +14,9 @@
                     <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
                     <a class="nav-item nav-link" href="/store">Store</a>
                 </div>
+                <div class="position-absolute end-0">
+                    <i class="bi bi-cart2 h2"></i>
+                </div>
             </div>
         </nav>
     </div>
