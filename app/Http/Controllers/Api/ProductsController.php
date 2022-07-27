@@ -15,7 +15,7 @@ class ProductsController extends Controller
 
     public function index(): \Illuminate\Support\Collection
     {
-        return (new \App\Models\Products)->getProd();
+        return (new \App\Models\Products)->getProductsData();
     }
 //
 //    public function store(ProductsRequest $request): ProductResource

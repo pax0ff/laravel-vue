@@ -11,7 +11,7 @@ import UsersRegistraiton from "../components/users/UsersRegistration";
 import UsersLogin from "../components/users/UsersLogin";
 import DashboardIndex from "../components/dashboard/DashboardIndex";
 import StoreIndex from "../components/store/StoreIndex";
-
+import StoreProductView from "../components/store/StoreProductView";
 const routes = [
     {
         path: '/',
@@ -69,6 +69,12 @@ const routes = [
         path: '/store',
         name: 'store.index',
         component: StoreIndex
+    },
+    {
+        path: '/products/:id',
+        name: 'store.products',
+        component: StoreProductView,
+        props:true
     }
 
 ]

@@ -19,7 +19,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('products',function() {
-    return (new App\Models\Products)->getProd();
+    return (new App\Models\Products)->getProductsData();
+
+});
+Route::get('/products/{id}',function(){
+//    $id=null;
+//    return (new App\Models\Products)->getProduct($id);
+
+});
+/* Cart - get all products from cart */
+Route::get('cart',function() {
 
 });
 
