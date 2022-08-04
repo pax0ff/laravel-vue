@@ -74,7 +74,7 @@ const routes = [
         path: '/products/:id',
         name: 'store.products',
         component: StoreProductView,
-        props:true
+        props: true
     }
 
 ]

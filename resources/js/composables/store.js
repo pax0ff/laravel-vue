@@ -15,7 +15,7 @@ export default function useStore() {
 
     const getProduct = async (id) => {
         let response = await axios.get('/api/products/' + id)
-        product.value = response.data.data;
+        product.value = response.data;
     }
 
     const storeProduct = async (data) => {
