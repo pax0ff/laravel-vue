@@ -24,6 +24,10 @@ Route::get('products',function() {
 Route::get('/products/{id}',function(){
     return (new App\Models\Products)->getProduct();
 });
+
+Route::get('/products/category/{categ}',function(){
+    return (new App\Models\Products)->getProductByCategory();
+});
 /* Cart - get all products from cart */
 Route::get('cart',function() {
 

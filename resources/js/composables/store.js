@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router';
 
 export default function useStore() {
     const products = ref([])
+    const productsByCategory = ref([])
     const product = ref([])
     const router = useRouter()
     const errors = ref('')
@@ -16,6 +17,13 @@ export default function useStore() {
     const getProduct = async (id) => {
         let response = await axios.get('/api/products/' + id)
         product.value = response.data;
+    }
+
+    const getProductsByCategory = async (category) => {
+        //console.log("storejs");
+        let response = await axios.get('/api/products/category/' + category)
+        console.log(response)
+        productsByCategory.value = response.data
     }
 
     const storeProduct = async (data) => {
@@ -57,6 +65,7 @@ export default function useStore() {
 
     return {
         products,
+        productsByCategory,
         product,
         errors,
         getProducts,
@@ -64,6 +73,7 @@ export default function useStore() {
         storeProduct,
         updateProduct,
         destroyProduct,
-        deleteProduct
+        deleteProduct,
+        getProductsByCategory
     }
 }

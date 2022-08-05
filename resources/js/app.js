@@ -9,6 +9,7 @@ import UsersIndex from "./components/users/UsersIndex";
 import LoginIndex from "./components/login/LoginIndex";
 import StoreIndex from "./components/store/StoreIndex";
 import StoreProductView from "./components/store/StoreProductView";
+import StoreCategoryView from "./components/store/StoreCategoryView";
 import 'bootstrap-icons/font/bootstrap-icons.css'
 createApp({
     components: {
@@ -17,6 +18,7 @@ createApp({
         LoginIndex,
         StoreIndex,
         StoreProductView,
-        Navbar
+        Navbar,
+        StoreCategoryView
     }
 }).use(routes,Bootstrap,jqr).mount('#app')

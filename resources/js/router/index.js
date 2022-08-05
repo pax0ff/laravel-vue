@@ -12,6 +12,7 @@ import UsersLogin from "../components/users/UsersLogin";
 import DashboardIndex from "../components/dashboard/DashboardIndex";
 import StoreIndex from "../components/store/StoreIndex";
 import StoreProductView from "../components/store/StoreProductView";
+import StoreCategoryView from "../components/store/StoreCategoryView";
 const routes = [
     {
         path: '/',
@@ -81,6 +82,12 @@ const routes = [
         name: 'users.create',
         component: UsersCreate,
     },
+    {
+        path: '/products/category/:category',
+        name: 'store.category',
+        component: StoreCategoryView,
+        props: true
+    }
 
 ]
 

@@ -18,4 +18,8 @@ class ProductsController extends Controller
         return (new \App\Models\Products)->getProductsData();
     }
 
+    public function productsByCategory() {
+        return (new \App\Models\Products)->getProductByCategory();
+    }
+
 }

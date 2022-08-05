@@ -1,14 +1,14 @@
 <template>
-<div class="container">
+    <div class="container">
         <div class="overflow-hidden overflow-x-auto min-w-full align-middle sm:rounded-md">
             <div class="flex place-content-end mb-4">
                 <div class="px-4 py-3 text-white bg-auto hover:bg-indigo-100 cursor-pointer">
-<!--                    <router-link :to="{ name: 'store.create' }" class="text-sm font-medium">Adauga produs</router-link>-->
+                    <!--                    <router-link :to="{ name: 'store.create' }" class="text-sm font-medium">Adauga produs</router-link>-->
                 </div>
             </div>
 
-                <div class="row">
-                    <template v-for="item in products" :key="item.id">
+            <div class="row">
+                <template v-for="item in productsByCategory" :key="item.id">
 
                     <div class="col-md-4 mt-2">
                         <div class="card">
@@ -27,7 +27,7 @@
                                         <a :href="`/products/`+item.id" class="text-default mb-2" data-abc="true">{{ item.name }}</a>
                                     </h6>
 
-                                    <a :href="`/products/category/`+item.categorie" class="text-muted" data-abc="true">{{ item.categorie }}</a>
+                                    <a :href="`/products/`+item.categorie" class="text-muted" data-abc="true">{{ item.categorie }}</a>
                                 </div>
                                 <h3 class="mb-0 font-weight-semibold">{{ item.price + " lei"}}</h3>
 
@@ -44,23 +44,31 @@
                             </div>
                         </div>
                     </div>
-                    </template>
-                </div>
+                </template>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 import useStore from "../../composables/store";
+import {onMounted} from "vue";
 export default {
-    setup() {
-        return {
-            ...useStore(),
+    props: {
+        category: {
+            required: true,
+            type: String
         }
-    },
-    mounted() {
-        this.getProducts()
-        //console.log(this.getProducts());
+    } ,
+    setup(props) {
+        const {errors, productsByCategory, getProductsByCategory} = useStore()
+        onMounted(getProductsByCategory(props.category))
+
+        return {
+            errors,
+            productsByCategory,
+            getProductsByCategory
+        }
     }
 }
 </script>
