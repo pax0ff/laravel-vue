@@ -19812,15 +19812,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       saveUser: saveUser,
       password: ''
     };
-  } // },
-  // methods: {
-  //     generatePassword() {
-  //         let inputPwd = document.getElementById('password');
-  //         this.password= Math.random().toString(36).slice(-8)
-  //         inputPwd.value = this.password
-  //     }
-  // }
-
+  }
 });
 
 /***/ }),
@@ -19954,8 +19946,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _composables_users__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../composables/users */ "./resources/js/composables/users.js");
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "UserRegistration"
+  // password:'',
+  setup: function setup() {
+    var form = (0,vue__WEBPACK_IMPORTED_MODULE_1__.reactive)({
+      'name': '',
+      'email': '',
+      'password': ''
+    });
+
+    var _useUsers = (0,_composables_users__WEBPACK_IMPORTED_MODULE_2__["default"])(),
+        errors = _useUsers.errors,
+        storeUser = _useUsers.storeUser;
+
+    var saveUser = /*#__PURE__*/function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return storeUser(_objectSpread({}, form));
+
+              case 2:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function saveUser() {
+        return _ref.apply(this, arguments);
+      };
+    }();
+
+    return {
+      form: form,
+      errors: errors,
+      saveUser: saveUser,
+      password: ''
+    };
+  }
 });
 
 /***/ }),
@@ -21083,18 +21133,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "container"
+  "class": "vh-100",
+  style: {
+    "background-color": "#eee"
+  }
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-  "class": "modal-title"
-}, "Register", -1
-/* HOISTED */
-);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container h-100\"><div class=\"row d-flex justify-content-center align-items-center h-100\"><div class=\"col-lg-12 col-xl-11\"><div class=\"card text-black\" style=\"border-radius:25px;\"><div class=\"card-body p-md-5\"><div class=\"row justify-content-center\"><div class=\"col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1\"><p class=\"text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4\">Sign up</p><form class=\"mx-1 mx-md-4\"><div class=\"d-flex flex-row align-items-center mb-4\"><i class=\"fas fa-user fa-lg me-3 fa-fw\"></i><div class=\"form-outline flex-fill mb-0\"><input type=\"text\" id=\"name\" class=\"form-control\"><label class=\"form-label\" for=\"form3Example1c\">Your Name</label></div></div><div class=\"d-flex flex-row align-items-center mb-4\"><i class=\"fas fa-envelope fa-lg me-3 fa-fw\"></i><div class=\"form-outline flex-fill mb-0\"><input type=\"email\" id=\"email\" class=\"form-control\"><label class=\"form-label\" for=\"form3Example3c\">Your Email</label></div></div><div class=\"d-flex flex-row align-items-center mb-4\"><i class=\"fas fa-lock fa-lg me-3 fa-fw\"></i><div class=\"form-outline flex-fill mb-0\"><input type=\"password\" id=\"password\" class=\"form-control\"><label class=\"form-label\" for=\"form3Example4c\">Password</label></div></div><div class=\"d-flex flex-row align-items-center mb-4\"><i class=\"fas fa-key fa-lg me-3 fa-fw\"></i><div class=\"form-outline flex-fill mb-0\"><input type=\"password\" id=\"password\" class=\"form-control\"><label class=\"form-label\" for=\"form3Example4cd\">Repeat your password</label></div></div><div class=\"form-check d-flex justify-content-center mb-5\"><input class=\"form-check-input me-2\" type=\"checkbox\" value=\"\" id=\"form2Example3c\"><label class=\"form-check-label\" for=\"agree-label\"> I agree all statements in <a href=\"#!\">Terms of service</a></label></div><div class=\"d-flex justify-content-center mx-4 mb-3 mb-lg-4\"><button type=\"button\" class=\"btn btn-primary btn-lg\">Register</button></div></form></div><div class=\"col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2\"><img src=\"https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp\" class=\"img-fluid\" alt=\"Sample image\"></div></div></div></div></div></div></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_3);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, _hoisted_3);
 }
 
 /***/ }),
@@ -22013,6 +22062,10 @@ var routes = [{
   name: 'store.products',
   component: _components_store_StoreProductView__WEBPACK_IMPORTED_MODULE_11__["default"],
   props: true
+}, {
+  path: '/users/register',
+  name: 'users.create',
+  component: _components_users_UsersCreate__WEBPACK_IMPORTED_MODULE_4__["default"]
 }];
 var route = (0,vue_router__WEBPACK_IMPORTED_MODULE_12__.createRouter)({
   history: (0,vue_router__WEBPACK_IMPORTED_MODULE_12__.createWebHistory)(),

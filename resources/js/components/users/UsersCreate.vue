@@ -83,13 +83,5 @@ export default {
             password: ''
         }
     }
-    // },
-    // methods: {
-    //     generatePassword() {
-    //         let inputPwd = document.getElementById('password');
-    //         this.password= Math.random().toString(36).slice(-8)
-    //         inputPwd.value = this.password
-    //     }
-    // }
 }
 </script>

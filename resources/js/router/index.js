@@ -7,7 +7,7 @@ import UsersIndex from "../components/users/UsersIndex";
 import UsersCreate from "../components/users/UsersCreate";
 import UsersEdit from "../components/users/UsersEdit";
 import LoginIndex from "../components/login/LoginIndex";
-import UsersRegistraiton from "../components/users/UsersRegistration";
+import UsersRegistration from "../components/users/UsersRegistration";
 import UsersLogin from "../components/users/UsersLogin";
 import DashboardIndex from "../components/dashboard/DashboardIndex";
 import StoreIndex from "../components/store/StoreIndex";
@@ -53,7 +53,7 @@ const routes = [
     {
         path: '/users/register',
         name: 'users.registration',
-        component: UsersRegistraiton
+        component: UsersRegistration
     },
     {
         path: '/users/login',
@@ -75,7 +75,12 @@ const routes = [
         name: 'store.products',
         component: StoreProductView,
         props: true
-    }
+    },
+    {
+        path: '/users/register',
+        name: 'users.create',
+        component: UsersCreate,
+    },
 
 ]
 

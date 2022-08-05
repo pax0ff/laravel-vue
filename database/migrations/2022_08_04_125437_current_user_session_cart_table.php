@@ -13,7 +13,13 @@ class CurrentUserSessionCartTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('current_user_session_cart', function (Blueprint $table) {
+            $table->id();
+            $table->string('session_hash');
+            $table->integer('cartId');
+            $table->integer('userId');
+            $table->timestamps();
+        });
     }
 
     /**

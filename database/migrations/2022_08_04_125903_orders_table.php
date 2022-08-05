@@ -13,7 +13,13 @@ class OrdersTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('orders', function (Blueprint $table) {
+            $table->id();
+            $table->json('products');
+            $table->integer('customerId');
+            $table->string('status');
+            $table->timestamps();
+        });
     }
 
     /**

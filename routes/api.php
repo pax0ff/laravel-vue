@@ -22,15 +22,19 @@ Route::get('products',function() {
     return (new App\Models\Products)->getProductsData();
 });
 Route::get('/products/{id}',function(){
-//    $id=null;
     return (new App\Models\Products)->getProduct();
-
 });
 /* Cart - get all products from cart */
 Route::get('cart',function() {
 
 });
+Route::post('users/login',function() {
+    return ;
+});
 
+Route::post('users/register',function () {
+    dd("register");
+});
 Route::apiResource('companies', \App\Http\Controllers\Api\CompanyController::class);
 Route::apiResource('users',\App\Http\Controllers\Api\UsersController::class);
 //Route::apiResource('products',\App\Http\Controllers\Api\ProductsController::class);

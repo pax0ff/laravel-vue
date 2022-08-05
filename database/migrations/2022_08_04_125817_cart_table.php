@@ -13,7 +13,12 @@ class CartTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('cart', function (Blueprint $table) {
+            $table->id();
+            $table->json('customer');
+            $table->json('products');
+            $table->timestamps();
+        });
     }
 
     /**
