@@ -10,7 +10,9 @@ class ProductsRequest extends FormRequest
     {
         return true;
     }
-    public function rules() {
+
+    public function rules(): array
+    {
         return [
             'name' => ['required'],
             'sku' => ['required'],
@@ -19,4 +21,5 @@ class ProductsRequest extends FormRequest
             'stock' => ['required'],
         ];
     }
+
 }
