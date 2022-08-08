@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request as Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\User as UserModel;
+use App\Models\Products as ProductsModel;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,14 +21,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('products',function() {
-    return (new App\Models\Products)->getProductsData();
+    return ProductsModel::getProductsData();
+
 });
 Route::get('/products/{id}',function(){
-    return (new App\Models\Products)->getProduct();
+    return ProductsModel::getProduct();
 });
 
 Route::get('/products/category/{categ}',function(){
-    return (new App\Models\Products)->getProductByCategory();
+    return ProductsModel::getProductByCategory();
 });
 /* Cart - get all products from cart */
 Route::get('cart',function() {
@@ -37,7 +40,7 @@ Route::post('users/login',function() {
 });
 
 Route::post('users/register',function () {
-    dd("register");
+    return UserModel::registerUser();
 });
 Route::apiResource('companies', \App\Http\Controllers\Api\CompanyController::class);
 Route::apiResource('users',\App\Http\Controllers\Api\UsersController::class);

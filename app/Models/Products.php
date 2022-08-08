@@ -13,7 +13,7 @@ use App\Models\Category as CategoryModel;
 class Products extends Model
 {
 
-    public function getProductsData(): \Illuminate\Support\Collection
+    public static function getProductsData(): \Illuminate\Support\Collection
     {
         return DB::table('products')
             ->leftJoin('category','category.id','=','products.category_id')
@@ -21,7 +21,7 @@ class Products extends Model
             ->get();
     }
 
-    public function getProduct(): \Illuminate\Support\Collection
+    public static function getProduct(): \Illuminate\Support\Collection
     {
         return DB::table('products')
             ->leftJoin('category','category.id','=','products.category_id')
@@ -31,7 +31,7 @@ class Products extends Model
 
     }
 
-    public function getProductByCategory(): \Illuminate\Support\Collection
+    public static function getProductByCategory(): \Illuminate\Support\Collection
     {
         return DB::table('products')
             ->leftJoin('category','category.id','=','products.category_id')

@@ -30,15 +30,15 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function userExists($id) {
+    public static function userExists($id) {
 
     }
 
-    public function login() {
+    public static function login() {
         dd("aaa");
     }
 
-    public function register() {
-
+    public static function registerUser() {
+        dd("register");
     }
 }
