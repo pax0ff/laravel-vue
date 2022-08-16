@@ -46,7 +46,7 @@ const routes = [
         component: UsersCreate,
     },
     {
-        path: '/users/:id/edit',
+        path: '/users/edit/:id',
         name: 'users.edit',
         component: UsersEdit,
         props: true

@@ -46,6 +46,9 @@
                     </div>
                     </template>
                 </div>
+            <div class="row">
+                <a href="/products/add">Add products</a>
+            </div>
         </div>
     </div>
 </template>

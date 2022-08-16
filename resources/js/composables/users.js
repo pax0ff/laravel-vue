@@ -10,12 +10,12 @@ export default function useUsers() {
 
     const getUsers = async () => {
         let response = await axios.get('/api/users')
-        users.value = response.data.data;
+        users.value = response.data;
     }
 
     const getUser = async (id) => {
         let response = await axios.get('/api/users/' + id)
-        user.value = response.data.data;
+        user.value = response.data;
     }
 
     const storeUser = async (data) => {
@@ -33,7 +33,8 @@ export default function useUsers() {
     const updateUser = async (id) => {
         errors.value = ''
         try {
-            await axios.put('/api/users/' + id, user.value)
+            console.log(user.value)
+            await axios.post('/api/users/save/' + id, user.value)
             await router.push({name: 'users.index'})
         } catch (e) {
             if (e.response.status === 422) {

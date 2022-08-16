@@ -25,7 +25,10 @@ export default function useStore() {
         console.log(response)
         productsByCategory.value = response.data
     }
-
+    const test = async () => {
+        let response = await axios.post('/api/products/add')
+        console.log(response)
+    }
     const storeProduct = async (data) => {
         errors.value = ''
         try {
@@ -74,6 +77,7 @@ export default function useStore() {
         updateProduct,
         destroyProduct,
         deleteProduct,
-        getProductsByCategory
+        getProductsByCategory,
+        test
     }
 }

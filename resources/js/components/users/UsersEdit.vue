@@ -8,14 +8,14 @@
         </div>
     </div>
     <form class="space-y-6" v-on:submit.prevent="saveUser">
-        <div class="space-y-4 rounded-md shadow-sm">
+        <div v-for="item in user" :key="item.id" class="space-y-4 rounded-md shadow-sm">
             <div>
                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                 <div class="mt-1">
                     <input type="text" name="name" id="name"
                            class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300
                            focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                           v-model="user.name">
+                           :value="item.name">
                 </div>
             </div>
 
@@ -25,7 +25,7 @@
                     <input type="text" name="email" id="email"
                            class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300
                            focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                           v-model="user.email">
+                           :value="item.email">
                 </div>
             </div>
 
@@ -61,7 +61,6 @@ export default {
             type: String
         }
     },
-
     setup(props) {
         const { errors, user, getUser, updateUser } = useUsers()
 
@@ -74,6 +73,7 @@ export default {
         return {
             errors,
             user,
+            getUser,
             saveUser
         }
     }
