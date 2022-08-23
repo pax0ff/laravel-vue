@@ -13,11 +13,12 @@ import DashboardIndex from "../components/dashboard/DashboardIndex";
 import StoreIndex from "../components/store/StoreIndex";
 import StoreProductView from "../components/store/StoreProductView";
 import StoreCategoryView from "../components/store/StoreCategoryView";
+import PagesIndex from "../components/pages/PagesIndex";
 const routes = [
     {
         path: '/',
-        name: 'login.index',
-        component: LoginIndex
+        name: 'pages.index',
+        component: PagesIndex
     },
     {
         path: '/companies',

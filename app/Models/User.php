@@ -10,7 +10,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\DB;
 use Laravel\Sanctum\HasApiTokens;
-use Symfony\Component\Console\Input\Input;
+use Symfony\Component\Console\Input\Input as Input;
 
 class User extends Authenticatable
 {
@@ -37,14 +37,15 @@ class User extends Authenticatable
     public static function userExists($id) {
 
     }
-    public static function getUsers()
+    public static function getUsers(): \Illuminate\Support\Collection
     {
         return DB::table('users')
             ->selectRaw('users.id,users.name,users.email,users.password,users.created_at')
             ->get();
     }
 
-    public static function getUser() {
+    public static function getUser(): \Illuminate\Support\Collection
+    {
         return DB::table('users')
             ->selectRaw('users.id,users.name,users.email,users.password')
             ->where('users.id','=',GeneralRequest::getUserIdFromRequest())
@@ -52,11 +53,12 @@ class User extends Authenticatable
     }
 
     public static function saveUser() {
-        $req = GeneralRequest::getRequest();
-        dd($req);
-        $query = DB::table('users')
-            ->where('id', '=',GeneralRequest::getUserIdFromRequest())
-            ->update(['name'=> 'asd1232224','email'=>'asd@a.com']);
+
+//        $req = GeneralRequest::getRequest();
+//        dd($req);
+//        $query = DB::table('users')
+//            ->where('id', '=',GeneralRequest::getUserIdFromRequest())
+//            ->update(['name'=> 'asd1232224','email'=>'asd@a.com']);
         //return $query;
     }
     public static function login() {

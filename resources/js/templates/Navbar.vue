@@ -7,12 +7,12 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="/">Acasa <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="/companies">Companies</a>
-                    <a class="nav-item nav-link" href="/users">Users</a>
-                    <a class="nav-item nav-link" href="/users/login">Login</a>
-                    <a class="nav-item nav-link" href="/users/register">Register</a>
-                    <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
-                    <a class="nav-item nav-link" href="/store">Store</a>
+                    <a class="nav-item nav-link" href="/companies">Parteneri</a>
+                    <a class="nav-item nav-link" href="/users">Useri</a>
+                    <a class="nav-item nav-link" href="/users/login">Intra in cont</a>
+                    <a class="nav-item nav-link" href="/users/register">Inregistreaza-te</a>
+<!--                    <a class="nav-item nav-link" href="/dashboard">Dashboard</a>-->
+                    <a class="nav-item nav-link" href="/store">Produsele noastre</a>
                 </div>
                 <div class="position-absolute end-0">
                     <a href="/cart" class=""><i class="bi bi-cart2 h2" id="cart"></i></a>

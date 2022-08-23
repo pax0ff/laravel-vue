@@ -19663,6 +19663,45 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/pages/PagesIndex.vue?vue&type=script&lang=js":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/pages/PagesIndex.vue?vue&type=script&lang=js ***!
+  \**********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      images: []
+    };
+  },
+  mounted: function mounted() {
+    this.getItemsSlider();
+  },
+  methods: {
+    getItemsSlider: function getItemsSlider() {
+      this.images = [{
+        id: 1,
+        href: "https://random.imagecdn.app/1600/400"
+      }, {
+        id: 2,
+        href: "https://random.imagecdn.app/1600/400"
+      }, {
+        id: 3,
+        href: "https://random.imagecdn.app/1600/400   "
+      }];
+      console.log(this.images);
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/store/StoreCategoryView.vue?vue&type=script&lang=js":
 /*!*****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/store/StoreCategoryView.vue?vue&type=script&lang=js ***!
@@ -20597,6 +20636,97 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/pages/PagesIndex.vue?vue&type=template&id=0728d884":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/pages/PagesIndex.vue?vue&type=template&id=0728d884 ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "container-fluid"
+};
+var _hoisted_2 = {
+  id: "carouselExampleIndicators",
+  "class": "carousel slide",
+  "data-ride": "carousel"
+};
+var _hoisted_3 = {
+  "class": "carousel-indicators"
+};
+var _hoisted_4 = ["data-slide-to"];
+var _hoisted_5 = {
+  "class": "carousel-inner"
+};
+var _hoisted_6 = ["src", "alt"];
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  "class": "carousel-control-prev",
+  href: "#carouselExampleIndicators",
+  role: "button",
+  "data-slide": "prev"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "carousel-control-prev-icon",
+  "aria-hidden": "true"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "sr-only"
+}, "Previous")], -1
+/* HOISTED */
+);
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  "class": "carousel-control-next",
+  href: "#carouselExampleIndicators",
+  role: "button",
+  "data-slide": "next"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "carousel-control-next-icon",
+  "aria-hidden": "true"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "sr-only"
+}, "Next")], -1
+/* HOISTED */
+);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ol", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.images, function (image, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: index
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+      "data-target": "#carouselExampleIndicators",
+      "data-slide-to": index,
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(index === 0 ? 'active' : '')
+    }, null, 10
+    /* CLASS, PROPS */
+    , _hoisted_4)]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.images, function (image, id) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: id,
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(id === 0 ? 'carousel-item active' : 'carousel-item')
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      "class": "d-block w-100",
+      src: image.href,
+      alt: image.id
+    }, null, 8
+    /* PROPS */
+    , _hoisted_6)], 2
+    /* CLASS */
+    );
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))]), _hoisted_7, _hoisted_8])]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/store/StoreCategoryView.vue?vue&type=template&id=0cbb42fb":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/store/StoreCategoryView.vue?vue&type=template&id=0cbb42fb ***!
@@ -21440,7 +21570,7 @@ var _hoisted_1 = {
   "class": "container-fluid bg-white"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<nav class=\"navbar navbar-expand-lg navbar-light bg-light\"><a class=\"navbar-brand\" href=\"#\"><img src=\"\"></a><div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\"><div class=\"navbar-nav\"><a class=\"nav-item nav-link active\" href=\"/\">Acasa <span class=\"sr-only\">(current)</span></a><a class=\"nav-item nav-link\" href=\"/companies\">Companies</a><a class=\"nav-item nav-link\" href=\"/users\">Users</a><a class=\"nav-item nav-link\" href=\"/users/login\">Login</a><a class=\"nav-item nav-link\" href=\"/users/register\">Register</a><a class=\"nav-item nav-link\" href=\"/dashboard\">Dashboard</a><a class=\"nav-item nav-link\" href=\"/store\">Store</a></div><div class=\"position-absolute end-0\"><a href=\"/cart\" class=\"\"><i class=\"bi bi-cart2 h2\" id=\"cart\"></i></a></div></div></nav>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<nav class=\"navbar navbar-expand-lg navbar-light bg-light\"><a class=\"navbar-brand\" href=\"#\"><img src=\"\"></a><div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\"><div class=\"navbar-nav\"><a class=\"nav-item nav-link active\" href=\"/\">Acasa <span class=\"sr-only\">(current)</span></a><a class=\"nav-item nav-link\" href=\"/companies\">Parteneri</a><a class=\"nav-item nav-link\" href=\"/users\">Useri</a><a class=\"nav-item nav-link\" href=\"/users/login\">Intra in cont</a><a class=\"nav-item nav-link\" href=\"/users/register\">Inregistreaza-te</a><!--                    &lt;a class=&quot;nav-item nav-link&quot; href=&quot;/dashboard&quot;&gt;Dashboard&lt;/a&gt;--><a class=\"nav-item nav-link\" href=\"/store\">Produsele noastre</a></div><div class=\"position-absolute end-0\"><a href=\"/cart\" class=\"\"><i class=\"bi bi-cart2 h2\" id=\"cart\"></i></a></div></div></nav>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -21458,18 +21588,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _router_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./router/index */ "./resources/js/router/index.js");
-/* harmony import */ var _components_companies_CompaniesIndex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/companies/CompaniesIndex */ "./resources/js/components/companies/CompaniesIndex.vue");
-/* harmony import */ var _templates_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./templates/Navbar */ "./resources/js/templates/Navbar.vue");
-/* harmony import */ var _components_users_UsersIndex__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/users/UsersIndex */ "./resources/js/components/users/UsersIndex.vue");
-/* harmony import */ var _components_login_LoginIndex__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/login/LoginIndex */ "./resources/js/components/login/LoginIndex.vue");
-/* harmony import */ var _components_store_StoreIndex__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/store/StoreIndex */ "./resources/js/components/store/StoreIndex.vue");
-/* harmony import */ var _components_store_StoreProductView__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/store/StoreProductView */ "./resources/js/components/store/StoreProductView.vue");
-/* harmony import */ var _components_store_StoreCategoryView__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/store/StoreCategoryView */ "./resources/js/components/store/StoreCategoryView.vue");
-/* harmony import */ var bootstrap_icons_font_bootstrap_icons_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! bootstrap-icons/font/bootstrap-icons.css */ "./node_modules/bootstrap-icons/font/bootstrap-icons.css");
+/* harmony import */ var bootstrap_js_src_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/js/src/carousel */ "./node_modules/bootstrap/js/src/carousel.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _router_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./router/index */ "./resources/js/router/index.js");
+/* harmony import */ var _components_companies_CompaniesIndex__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/companies/CompaniesIndex */ "./resources/js/components/companies/CompaniesIndex.vue");
+/* harmony import */ var _templates_Navbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./templates/Navbar */ "./resources/js/templates/Navbar.vue");
+/* harmony import */ var _components_users_UsersIndex__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/users/UsersIndex */ "./resources/js/components/users/UsersIndex.vue");
+/* harmony import */ var _components_login_LoginIndex__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/login/LoginIndex */ "./resources/js/components/login/LoginIndex.vue");
+/* harmony import */ var _components_store_StoreIndex__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/store/StoreIndex */ "./resources/js/components/store/StoreIndex.vue");
+/* harmony import */ var _components_store_StoreProductView__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/store/StoreProductView */ "./resources/js/components/store/StoreProductView.vue");
+/* harmony import */ var _components_store_StoreCategoryView__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/store/StoreCategoryView */ "./resources/js/components/store/StoreCategoryView.vue");
+/* harmony import */ var bootstrap_icons_font_bootstrap_icons_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! bootstrap-icons/font/bootstrap-icons.css */ "./node_modules/bootstrap-icons/font/bootstrap-icons.css");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
@@ -21484,17 +21615,18 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-(0,vue__WEBPACK_IMPORTED_MODULE_2__.createApp)({
+
+(0,vue__WEBPACK_IMPORTED_MODULE_3__.createApp)({
   components: {
-    CompaniesIndex: _components_companies_CompaniesIndex__WEBPACK_IMPORTED_MODULE_4__["default"],
-    UsersIndex: _components_users_UsersIndex__WEBPACK_IMPORTED_MODULE_6__["default"],
-    LoginIndex: _components_login_LoginIndex__WEBPACK_IMPORTED_MODULE_7__["default"],
-    StoreIndex: _components_store_StoreIndex__WEBPACK_IMPORTED_MODULE_8__["default"],
-    StoreProductView: _components_store_StoreProductView__WEBPACK_IMPORTED_MODULE_9__["default"],
-    Navbar: _templates_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"],
-    StoreCategoryView: _components_store_StoreCategoryView__WEBPACK_IMPORTED_MODULE_10__["default"]
+    CompaniesIndex: _components_companies_CompaniesIndex__WEBPACK_IMPORTED_MODULE_5__["default"],
+    UsersIndex: _components_users_UsersIndex__WEBPACK_IMPORTED_MODULE_7__["default"],
+    LoginIndex: _components_login_LoginIndex__WEBPACK_IMPORTED_MODULE_8__["default"],
+    StoreIndex: _components_store_StoreIndex__WEBPACK_IMPORTED_MODULE_9__["default"],
+    StoreProductView: _components_store_StoreProductView__WEBPACK_IMPORTED_MODULE_10__["default"],
+    Navbar: _templates_Navbar__WEBPACK_IMPORTED_MODULE_6__["default"],
+    StoreCategoryView: _components_store_StoreCategoryView__WEBPACK_IMPORTED_MODULE_11__["default"]
   }
-}).use(_router_index__WEBPACK_IMPORTED_MODULE_3__["default"], bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__["default"], (jquery__WEBPACK_IMPORTED_MODULE_1___default())).mount('#app');
+}).use(_router_index__WEBPACK_IMPORTED_MODULE_4__["default"], bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__["default"], (jquery__WEBPACK_IMPORTED_MODULE_2___default()), bootstrap_js_src_carousel__WEBPACK_IMPORTED_MODULE_1__["default"]).mount('#app');
 
 /***/ }),
 
@@ -22211,29 +22343,23 @@ function useUsers() {
               return axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/users/save/' + id, user.value);
 
             case 5:
-              _context4.next = 7;
-              return router.push({
-                name: 'users.index'
-              });
-
-            case 7:
-              _context4.next = 12;
+              _context4.next = 10;
               break;
 
-            case 9:
-              _context4.prev = 9;
+            case 7:
+              _context4.prev = 7;
               _context4.t0 = _context4["catch"](1);
 
               if (_context4.t0.response.status === 422) {
                 errors.value = _context4.t0.response.data.errors;
               }
 
-            case 12:
+            case 10:
             case "end":
               return _context4.stop();
           }
         }
-      }, _callee4, null, [[1, 9]]);
+      }, _callee4, null, [[1, 7]]);
     }));
 
     return function updateUser(_x3) {
@@ -22323,7 +22449,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var _components_companies_CompaniesIndex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/companies/CompaniesIndex */ "./resources/js/components/companies/CompaniesIndex.vue");
 /* harmony import */ var _components_companies_CompaniesCreate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/companies/CompaniesCreate */ "./resources/js/components/companies/CompaniesCreate.vue");
 /* harmony import */ var _components_companies_CompaniesEdit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/companies/CompaniesEdit */ "./resources/js/components/companies/CompaniesEdit.vue");
@@ -22337,6 +22463,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_store_StoreIndex__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/store/StoreIndex */ "./resources/js/components/store/StoreIndex.vue");
 /* harmony import */ var _components_store_StoreProductView__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/store/StoreProductView */ "./resources/js/components/store/StoreProductView.vue");
 /* harmony import */ var _components_store_StoreCategoryView__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/store/StoreCategoryView */ "./resources/js/components/store/StoreCategoryView.vue");
+/* harmony import */ var _components_pages_PagesIndex__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/pages/PagesIndex */ "./resources/js/components/pages/PagesIndex.vue");
+
 
 
 
@@ -22353,8 +22481,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var routes = [{
   path: '/',
-  name: 'login.index',
-  component: _components_login_LoginIndex__WEBPACK_IMPORTED_MODULE_6__["default"]
+  name: 'pages.index',
+  component: _components_pages_PagesIndex__WEBPACK_IMPORTED_MODULE_13__["default"]
 }, {
   path: '/companies',
   name: 'companies.index',
@@ -22412,11 +22540,1688 @@ var routes = [{
   component: _components_store_StoreCategoryView__WEBPACK_IMPORTED_MODULE_12__["default"],
   props: true
 }];
-var route = (0,vue_router__WEBPACK_IMPORTED_MODULE_13__.createRouter)({
-  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_13__.createWebHistory)(),
+var route = (0,vue_router__WEBPACK_IMPORTED_MODULE_14__.createRouter)({
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_14__.createWebHistory)(),
   routes: routes
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (route);
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap/js/src/base-component.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/bootstrap/js/src/base-component.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _dom_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom/data */ "./node_modules/bootstrap/js/src/dom/data.js");
+/* harmony import */ var _util_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./util/index */ "./node_modules/bootstrap/js/src/util/index.js");
+/* harmony import */ var _dom_event_handler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dom/event-handler */ "./node_modules/bootstrap/js/src/dom/event-handler.js");
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v5.1.3): base-component.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+
+
+
+
+/**
+ * ------------------------------------------------------------------------
+ * Constants
+ * ------------------------------------------------------------------------
+ */
+
+const VERSION = '5.1.3'
+
+class BaseComponent {
+  constructor(element) {
+    element = (0,_util_index__WEBPACK_IMPORTED_MODULE_1__.getElement)(element)
+
+    if (!element) {
+      return
+    }
+
+    this._element = element
+    _dom_data__WEBPACK_IMPORTED_MODULE_0__["default"].set(this._element, this.constructor.DATA_KEY, this)
+  }
+
+  dispose() {
+    _dom_data__WEBPACK_IMPORTED_MODULE_0__["default"].remove(this._element, this.constructor.DATA_KEY)
+    _dom_event_handler__WEBPACK_IMPORTED_MODULE_2__["default"].off(this._element, this.constructor.EVENT_KEY)
+
+    Object.getOwnPropertyNames(this).forEach(propertyName => {
+      this[propertyName] = null
+    })
+  }
+
+  _queueCallback(callback, element, isAnimated = true) {
+    (0,_util_index__WEBPACK_IMPORTED_MODULE_1__.executeAfterTransition)(callback, element, isAnimated)
+  }
+
+  /** Static */
+
+  static getInstance(element) {
+    return _dom_data__WEBPACK_IMPORTED_MODULE_0__["default"].get((0,_util_index__WEBPACK_IMPORTED_MODULE_1__.getElement)(element), this.DATA_KEY)
+  }
+
+  static getOrCreateInstance(element, config = {}) {
+    return this.getInstance(element) || new this(element, typeof config === 'object' ? config : null)
+  }
+
+  static get VERSION() {
+    return VERSION
+  }
+
+  static get NAME() {
+    throw new Error('You have to implement the static method "NAME", for each component!')
+  }
+
+  static get DATA_KEY() {
+    return `bs.${this.NAME}`
+  }
+
+  static get EVENT_KEY() {
+    return `.${this.DATA_KEY}`
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BaseComponent);
+
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap/js/src/carousel.js":
+/*!***************************************************!*\
+  !*** ./node_modules/bootstrap/js/src/carousel.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _util_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util/index */ "./node_modules/bootstrap/js/src/util/index.js");
+/* harmony import */ var _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dom/event-handler */ "./node_modules/bootstrap/js/src/dom/event-handler.js");
+/* harmony import */ var _dom_manipulator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dom/manipulator */ "./node_modules/bootstrap/js/src/dom/manipulator.js");
+/* harmony import */ var _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dom/selector-engine */ "./node_modules/bootstrap/js/src/dom/selector-engine.js");
+/* harmony import */ var _base_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./base-component */ "./node_modules/bootstrap/js/src/base-component.js");
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v5.1.3): carousel.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+
+
+
+
+
+
+/**
+ * ------------------------------------------------------------------------
+ * Constants
+ * ------------------------------------------------------------------------
+ */
+
+const NAME = 'carousel'
+const DATA_KEY = 'bs.carousel'
+const EVENT_KEY = `.${DATA_KEY}`
+const DATA_API_KEY = '.data-api'
+
+const ARROW_LEFT_KEY = 'ArrowLeft'
+const ARROW_RIGHT_KEY = 'ArrowRight'
+const TOUCHEVENT_COMPAT_WAIT = 500 // Time for mouse compat events to fire after touch
+const SWIPE_THRESHOLD = 40
+
+const Default = {
+  interval: 5000,
+  keyboard: true,
+  slide: false,
+  pause: 'hover',
+  wrap: true,
+  touch: true
+}
+
+const DefaultType = {
+  interval: '(number|boolean)',
+  keyboard: 'boolean',
+  slide: '(boolean|string)',
+  pause: '(string|boolean)',
+  wrap: 'boolean',
+  touch: 'boolean'
+}
+
+const ORDER_NEXT = 'next'
+const ORDER_PREV = 'prev'
+const DIRECTION_LEFT = 'left'
+const DIRECTION_RIGHT = 'right'
+
+const KEY_TO_DIRECTION = {
+  [ARROW_LEFT_KEY]: DIRECTION_RIGHT,
+  [ARROW_RIGHT_KEY]: DIRECTION_LEFT
+}
+
+const EVENT_SLIDE = `slide${EVENT_KEY}`
+const EVENT_SLID = `slid${EVENT_KEY}`
+const EVENT_KEYDOWN = `keydown${EVENT_KEY}`
+const EVENT_MOUSEENTER = `mouseenter${EVENT_KEY}`
+const EVENT_MOUSELEAVE = `mouseleave${EVENT_KEY}`
+const EVENT_TOUCHSTART = `touchstart${EVENT_KEY}`
+const EVENT_TOUCHMOVE = `touchmove${EVENT_KEY}`
+const EVENT_TOUCHEND = `touchend${EVENT_KEY}`
+const EVENT_POINTERDOWN = `pointerdown${EVENT_KEY}`
+const EVENT_POINTERUP = `pointerup${EVENT_KEY}`
+const EVENT_DRAG_START = `dragstart${EVENT_KEY}`
+const EVENT_LOAD_DATA_API = `load${EVENT_KEY}${DATA_API_KEY}`
+const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`
+
+const CLASS_NAME_CAROUSEL = 'carousel'
+const CLASS_NAME_ACTIVE = 'active'
+const CLASS_NAME_SLIDE = 'slide'
+const CLASS_NAME_END = 'carousel-item-end'
+const CLASS_NAME_START = 'carousel-item-start'
+const CLASS_NAME_NEXT = 'carousel-item-next'
+const CLASS_NAME_PREV = 'carousel-item-prev'
+const CLASS_NAME_POINTER_EVENT = 'pointer-event'
+
+const SELECTOR_ACTIVE = '.active'
+const SELECTOR_ACTIVE_ITEM = '.active.carousel-item'
+const SELECTOR_ITEM = '.carousel-item'
+const SELECTOR_ITEM_IMG = '.carousel-item img'
+const SELECTOR_NEXT_PREV = '.carousel-item-next, .carousel-item-prev'
+const SELECTOR_INDICATORS = '.carousel-indicators'
+const SELECTOR_INDICATOR = '[data-bs-target]'
+const SELECTOR_DATA_SLIDE = '[data-bs-slide], [data-bs-slide-to]'
+const SELECTOR_DATA_RIDE = '[data-bs-ride="carousel"]'
+
+const POINTER_TYPE_TOUCH = 'touch'
+const POINTER_TYPE_PEN = 'pen'
+
+/**
+ * ------------------------------------------------------------------------
+ * Class Definition
+ * ------------------------------------------------------------------------
+ */
+class Carousel extends _base_component__WEBPACK_IMPORTED_MODULE_4__["default"] {
+  constructor(element, config) {
+    super(element)
+
+    this._items = null
+    this._interval = null
+    this._activeElement = null
+    this._isPaused = false
+    this._isSliding = false
+    this.touchTimeout = null
+    this.touchStartX = 0
+    this.touchDeltaX = 0
+
+    this._config = this._getConfig(config)
+    this._indicatorsElement = _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].findOne(SELECTOR_INDICATORS, this._element)
+    this._touchSupported = 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0
+    this._pointerEvent = Boolean(window.PointerEvent)
+
+    this._addEventListeners()
+  }
+
+  // Getters
+
+  static get Default() {
+    return Default
+  }
+
+  static get NAME() {
+    return NAME
+  }
+
+  // Public
+
+  next() {
+    this._slide(ORDER_NEXT)
+  }
+
+  nextWhenVisible() {
+    // Don't call next when the page isn't visible
+    // or the carousel or its parent isn't visible
+    if (!document.hidden && (0,_util_index__WEBPACK_IMPORTED_MODULE_0__.isVisible)(this._element)) {
+      this.next()
+    }
+  }
+
+  prev() {
+    this._slide(ORDER_PREV)
+  }
+
+  pause(event) {
+    if (!event) {
+      this._isPaused = true
+    }
+
+    if (_dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].findOne(SELECTOR_NEXT_PREV, this._element)) {
+      (0,_util_index__WEBPACK_IMPORTED_MODULE_0__.triggerTransitionEnd)(this._element)
+      this.cycle(true)
+    }
+
+    clearInterval(this._interval)
+    this._interval = null
+  }
+
+  cycle(event) {
+    if (!event) {
+      this._isPaused = false
+    }
+
+    if (this._interval) {
+      clearInterval(this._interval)
+      this._interval = null
+    }
+
+    if (this._config && this._config.interval && !this._isPaused) {
+      this._updateInterval()
+
+      this._interval = setInterval(
+        (document.visibilityState ? this.nextWhenVisible : this.next).bind(this),
+        this._config.interval
+      )
+    }
+  }
+
+  to(index) {
+    this._activeElement = _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].findOne(SELECTOR_ACTIVE_ITEM, this._element)
+    const activeIndex = this._getItemIndex(this._activeElement)
+
+    if (index > this._items.length - 1 || index < 0) {
+      return
+    }
+
+    if (this._isSliding) {
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].one(this._element, EVENT_SLID, () => this.to(index))
+      return
+    }
+
+    if (activeIndex === index) {
+      this.pause()
+      this.cycle()
+      return
+    }
+
+    const order = index > activeIndex ?
+      ORDER_NEXT :
+      ORDER_PREV
+
+    this._slide(order, this._items[index])
+  }
+
+  // Private
+
+  _getConfig(config) {
+    config = {
+      ...Default,
+      ..._dom_manipulator__WEBPACK_IMPORTED_MODULE_2__["default"].getDataAttributes(this._element),
+      ...(typeof config === 'object' ? config : {})
+    }
+    ;(0,_util_index__WEBPACK_IMPORTED_MODULE_0__.typeCheckConfig)(NAME, config, DefaultType)
+    return config
+  }
+
+  _handleSwipe() {
+    const absDeltax = Math.abs(this.touchDeltaX)
+
+    if (absDeltax <= SWIPE_THRESHOLD) {
+      return
+    }
+
+    const direction = absDeltax / this.touchDeltaX
+
+    this.touchDeltaX = 0
+
+    if (!direction) {
+      return
+    }
+
+    this._slide(direction > 0 ? DIRECTION_RIGHT : DIRECTION_LEFT)
+  }
+
+  _addEventListeners() {
+    if (this._config.keyboard) {
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(this._element, EVENT_KEYDOWN, event => this._keydown(event))
+    }
+
+    if (this._config.pause === 'hover') {
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(this._element, EVENT_MOUSEENTER, event => this.pause(event))
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(this._element, EVENT_MOUSELEAVE, event => this.cycle(event))
+    }
+
+    if (this._config.touch && this._touchSupported) {
+      this._addTouchEventListeners()
+    }
+  }
+
+  _addTouchEventListeners() {
+    const hasPointerPenTouch = event => {
+      return this._pointerEvent &&
+        (event.pointerType === POINTER_TYPE_PEN || event.pointerType === POINTER_TYPE_TOUCH)
+    }
+
+    const start = event => {
+      if (hasPointerPenTouch(event)) {
+        this.touchStartX = event.clientX
+      } else if (!this._pointerEvent) {
+        this.touchStartX = event.touches[0].clientX
+      }
+    }
+
+    const move = event => {
+      // ensure swiping with one touch and not pinching
+      this.touchDeltaX = event.touches && event.touches.length > 1 ?
+        0 :
+        event.touches[0].clientX - this.touchStartX
+    }
+
+    const end = event => {
+      if (hasPointerPenTouch(event)) {
+        this.touchDeltaX = event.clientX - this.touchStartX
+      }
+
+      this._handleSwipe()
+      if (this._config.pause === 'hover') {
+        // If it's a touch-enabled device, mouseenter/leave are fired as
+        // part of the mouse compatibility events on first tap - the carousel
+        // would stop cycling until user tapped out of it;
+        // here, we listen for touchend, explicitly pause the carousel
+        // (as if it's the second time we tap on it, mouseenter compat event
+        // is NOT fired) and after a timeout (to allow for mouse compatibility
+        // events to fire) we explicitly restart cycling
+
+        this.pause()
+        if (this.touchTimeout) {
+          clearTimeout(this.touchTimeout)
+        }
+
+        this.touchTimeout = setTimeout(event => this.cycle(event), TOUCHEVENT_COMPAT_WAIT + this._config.interval)
+      }
+    }
+
+    _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].find(SELECTOR_ITEM_IMG, this._element).forEach(itemImg => {
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(itemImg, EVENT_DRAG_START, event => event.preventDefault())
+    })
+
+    if (this._pointerEvent) {
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(this._element, EVENT_POINTERDOWN, event => start(event))
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(this._element, EVENT_POINTERUP, event => end(event))
+
+      this._element.classList.add(CLASS_NAME_POINTER_EVENT)
+    } else {
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(this._element, EVENT_TOUCHSTART, event => start(event))
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(this._element, EVENT_TOUCHMOVE, event => move(event))
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(this._element, EVENT_TOUCHEND, event => end(event))
+    }
+  }
+
+  _keydown(event) {
+    if (/input|textarea/i.test(event.target.tagName)) {
+      return
+    }
+
+    const direction = KEY_TO_DIRECTION[event.key]
+    if (direction) {
+      event.preventDefault()
+      this._slide(direction)
+    }
+  }
+
+  _getItemIndex(element) {
+    this._items = element && element.parentNode ?
+      _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].find(SELECTOR_ITEM, element.parentNode) :
+      []
+
+    return this._items.indexOf(element)
+  }
+
+  _getItemByOrder(order, activeElement) {
+    const isNext = order === ORDER_NEXT
+    return (0,_util_index__WEBPACK_IMPORTED_MODULE_0__.getNextActiveElement)(this._items, activeElement, isNext, this._config.wrap)
+  }
+
+  _triggerSlideEvent(relatedTarget, eventDirectionName) {
+    const targetIndex = this._getItemIndex(relatedTarget)
+    const fromIndex = this._getItemIndex(_dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].findOne(SELECTOR_ACTIVE_ITEM, this._element))
+
+    return _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].trigger(this._element, EVENT_SLIDE, {
+      relatedTarget,
+      direction: eventDirectionName,
+      from: fromIndex,
+      to: targetIndex
+    })
+  }
+
+  _setActiveIndicatorElement(element) {
+    if (this._indicatorsElement) {
+      const activeIndicator = _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].findOne(SELECTOR_ACTIVE, this._indicatorsElement)
+
+      activeIndicator.classList.remove(CLASS_NAME_ACTIVE)
+      activeIndicator.removeAttribute('aria-current')
+
+      const indicators = _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].find(SELECTOR_INDICATOR, this._indicatorsElement)
+
+      for (let i = 0; i < indicators.length; i++) {
+        if (Number.parseInt(indicators[i].getAttribute('data-bs-slide-to'), 10) === this._getItemIndex(element)) {
+          indicators[i].classList.add(CLASS_NAME_ACTIVE)
+          indicators[i].setAttribute('aria-current', 'true')
+          break
+        }
+      }
+    }
+  }
+
+  _updateInterval() {
+    const element = this._activeElement || _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].findOne(SELECTOR_ACTIVE_ITEM, this._element)
+
+    if (!element) {
+      return
+    }
+
+    const elementInterval = Number.parseInt(element.getAttribute('data-bs-interval'), 10)
+
+    if (elementInterval) {
+      this._config.defaultInterval = this._config.defaultInterval || this._config.interval
+      this._config.interval = elementInterval
+    } else {
+      this._config.interval = this._config.defaultInterval || this._config.interval
+    }
+  }
+
+  _slide(directionOrOrder, element) {
+    const order = this._directionToOrder(directionOrOrder)
+    const activeElement = _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].findOne(SELECTOR_ACTIVE_ITEM, this._element)
+    const activeElementIndex = this._getItemIndex(activeElement)
+    const nextElement = element || this._getItemByOrder(order, activeElement)
+
+    const nextElementIndex = this._getItemIndex(nextElement)
+    const isCycling = Boolean(this._interval)
+
+    const isNext = order === ORDER_NEXT
+    const directionalClassName = isNext ? CLASS_NAME_START : CLASS_NAME_END
+    const orderClassName = isNext ? CLASS_NAME_NEXT : CLASS_NAME_PREV
+    const eventDirectionName = this._orderToDirection(order)
+
+    if (nextElement && nextElement.classList.contains(CLASS_NAME_ACTIVE)) {
+      this._isSliding = false
+      return
+    }
+
+    if (this._isSliding) {
+      return
+    }
+
+    const slideEvent = this._triggerSlideEvent(nextElement, eventDirectionName)
+    if (slideEvent.defaultPrevented) {
+      return
+    }
+
+    if (!activeElement || !nextElement) {
+      // Some weirdness is happening, so we bail
+      return
+    }
+
+    this._isSliding = true
+
+    if (isCycling) {
+      this.pause()
+    }
+
+    this._setActiveIndicatorElement(nextElement)
+    this._activeElement = nextElement
+
+    const triggerSlidEvent = () => {
+      _dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].trigger(this._element, EVENT_SLID, {
+        relatedTarget: nextElement,
+        direction: eventDirectionName,
+        from: activeElementIndex,
+        to: nextElementIndex
+      })
+    }
+
+    if (this._element.classList.contains(CLASS_NAME_SLIDE)) {
+      nextElement.classList.add(orderClassName)
+
+      ;(0,_util_index__WEBPACK_IMPORTED_MODULE_0__.reflow)(nextElement)
+
+      activeElement.classList.add(directionalClassName)
+      nextElement.classList.add(directionalClassName)
+
+      const completeCallBack = () => {
+        nextElement.classList.remove(directionalClassName, orderClassName)
+        nextElement.classList.add(CLASS_NAME_ACTIVE)
+
+        activeElement.classList.remove(CLASS_NAME_ACTIVE, orderClassName, directionalClassName)
+
+        this._isSliding = false
+
+        setTimeout(triggerSlidEvent, 0)
+      }
+
+      this._queueCallback(completeCallBack, activeElement, true)
+    } else {
+      activeElement.classList.remove(CLASS_NAME_ACTIVE)
+      nextElement.classList.add(CLASS_NAME_ACTIVE)
+
+      this._isSliding = false
+      triggerSlidEvent()
+    }
+
+    if (isCycling) {
+      this.cycle()
+    }
+  }
+
+  _directionToOrder(direction) {
+    if (![DIRECTION_RIGHT, DIRECTION_LEFT].includes(direction)) {
+      return direction
+    }
+
+    if ((0,_util_index__WEBPACK_IMPORTED_MODULE_0__.isRTL)()) {
+      return direction === DIRECTION_LEFT ? ORDER_PREV : ORDER_NEXT
+    }
+
+    return direction === DIRECTION_LEFT ? ORDER_NEXT : ORDER_PREV
+  }
+
+  _orderToDirection(order) {
+    if (![ORDER_NEXT, ORDER_PREV].includes(order)) {
+      return order
+    }
+
+    if ((0,_util_index__WEBPACK_IMPORTED_MODULE_0__.isRTL)()) {
+      return order === ORDER_PREV ? DIRECTION_LEFT : DIRECTION_RIGHT
+    }
+
+    return order === ORDER_PREV ? DIRECTION_RIGHT : DIRECTION_LEFT
+  }
+
+  // Static
+
+  static carouselInterface(element, config) {
+    const data = Carousel.getOrCreateInstance(element, config)
+
+    let { _config } = data
+    if (typeof config === 'object') {
+      _config = {
+        ..._config,
+        ...config
+      }
+    }
+
+    const action = typeof config === 'string' ? config : _config.slide
+
+    if (typeof config === 'number') {
+      data.to(config)
+    } else if (typeof action === 'string') {
+      if (typeof data[action] === 'undefined') {
+        throw new TypeError(`No method named "${action}"`)
+      }
+
+      data[action]()
+    } else if (_config.interval && _config.ride) {
+      data.pause()
+      data.cycle()
+    }
+  }
+
+  static jQueryInterface(config) {
+    return this.each(function () {
+      Carousel.carouselInterface(this, config)
+    })
+  }
+
+  static dataApiClickHandler(event) {
+    const target = (0,_util_index__WEBPACK_IMPORTED_MODULE_0__.getElementFromSelector)(this)
+
+    if (!target || !target.classList.contains(CLASS_NAME_CAROUSEL)) {
+      return
+    }
+
+    const config = {
+      ..._dom_manipulator__WEBPACK_IMPORTED_MODULE_2__["default"].getDataAttributes(target),
+      ..._dom_manipulator__WEBPACK_IMPORTED_MODULE_2__["default"].getDataAttributes(this)
+    }
+    const slideIndex = this.getAttribute('data-bs-slide-to')
+
+    if (slideIndex) {
+      config.interval = false
+    }
+
+    Carousel.carouselInterface(target, config)
+
+    if (slideIndex) {
+      Carousel.getInstance(target).to(slideIndex)
+    }
+
+    event.preventDefault()
+  }
+}
+
+/**
+ * ------------------------------------------------------------------------
+ * Data Api implementation
+ * ------------------------------------------------------------------------
+ */
+
+_dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_SLIDE, Carousel.dataApiClickHandler)
+
+_dom_event_handler__WEBPACK_IMPORTED_MODULE_1__["default"].on(window, EVENT_LOAD_DATA_API, () => {
+  const carousels = _dom_selector_engine__WEBPACK_IMPORTED_MODULE_3__["default"].find(SELECTOR_DATA_RIDE)
+
+  for (let i = 0, len = carousels.length; i < len; i++) {
+    Carousel.carouselInterface(carousels[i], Carousel.getInstance(carousels[i]))
+  }
+})
+
+/**
+ * ------------------------------------------------------------------------
+ * jQuery
+ * ------------------------------------------------------------------------
+ * add .Carousel to jQuery only if jQuery is present
+ */
+
+;(0,_util_index__WEBPACK_IMPORTED_MODULE_0__.defineJQueryPlugin)(Carousel)
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Carousel);
+
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap/js/src/dom/data.js":
+/*!***************************************************!*\
+  !*** ./node_modules/bootstrap/js/src/dom/data.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v5.1.3): dom/data.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+/**
+ * ------------------------------------------------------------------------
+ * Constants
+ * ------------------------------------------------------------------------
+ */
+
+const elementMap = new Map()
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  set(element, key, instance) {
+    if (!elementMap.has(element)) {
+      elementMap.set(element, new Map())
+    }
+
+    const instanceMap = elementMap.get(element)
+
+    // make it clear we only want one instance per element
+    // can be removed later when multiple key/instances are fine to be used
+    if (!instanceMap.has(key) && instanceMap.size !== 0) {
+      // eslint-disable-next-line no-console
+      console.error(`Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`)
+      return
+    }
+
+    instanceMap.set(key, instance)
+  },
+
+  get(element, key) {
+    if (elementMap.has(element)) {
+      return elementMap.get(element).get(key) || null
+    }
+
+    return null
+  },
+
+  remove(element, key) {
+    if (!elementMap.has(element)) {
+      return
+    }
+
+    const instanceMap = elementMap.get(element)
+
+    instanceMap.delete(key)
+
+    // free up element references if there are no instances left for an element
+    if (instanceMap.size === 0) {
+      elementMap.delete(element)
+    }
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap/js/src/dom/event-handler.js":
+/*!************************************************************!*\
+  !*** ./node_modules/bootstrap/js/src/dom/event-handler.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _util_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/index */ "./node_modules/bootstrap/js/src/util/index.js");
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v5.1.3): dom/event-handler.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+
+
+/**
+ * ------------------------------------------------------------------------
+ * Constants
+ * ------------------------------------------------------------------------
+ */
+
+const namespaceRegex = /[^.]*(?=\..*)\.|.*/
+const stripNameRegex = /\..*/
+const stripUidRegex = /::\d+$/
+const eventRegistry = {} // Events storage
+let uidEvent = 1
+const customEvents = {
+  mouseenter: 'mouseover',
+  mouseleave: 'mouseout'
+}
+const customEventsRegex = /^(mouseenter|mouseleave)/i
+const nativeEvents = new Set([
+  'click',
+  'dblclick',
+  'mouseup',
+  'mousedown',
+  'contextmenu',
+  'mousewheel',
+  'DOMMouseScroll',
+  'mouseover',
+  'mouseout',
+  'mousemove',
+  'selectstart',
+  'selectend',
+  'keydown',
+  'keypress',
+  'keyup',
+  'orientationchange',
+  'touchstart',
+  'touchmove',
+  'touchend',
+  'touchcancel',
+  'pointerdown',
+  'pointermove',
+  'pointerup',
+  'pointerleave',
+  'pointercancel',
+  'gesturestart',
+  'gesturechange',
+  'gestureend',
+  'focus',
+  'blur',
+  'change',
+  'reset',
+  'select',
+  'submit',
+  'focusin',
+  'focusout',
+  'load',
+  'unload',
+  'beforeunload',
+  'resize',
+  'move',
+  'DOMContentLoaded',
+  'readystatechange',
+  'error',
+  'abort',
+  'scroll'
+])
+
+/**
+ * ------------------------------------------------------------------------
+ * Private methods
+ * ------------------------------------------------------------------------
+ */
+
+function getUidEvent(element, uid) {
+  return (uid && `${uid}::${uidEvent++}`) || element.uidEvent || uidEvent++
+}
+
+function getEvent(element) {
+  const uid = getUidEvent(element)
+
+  element.uidEvent = uid
+  eventRegistry[uid] = eventRegistry[uid] || {}
+
+  return eventRegistry[uid]
+}
+
+function bootstrapHandler(element, fn) {
+  return function handler(event) {
+    event.delegateTarget = element
+
+    if (handler.oneOff) {
+      EventHandler.off(element, event.type, fn)
+    }
+
+    return fn.apply(element, [event])
+  }
+}
+
+function bootstrapDelegationHandler(element, selector, fn) {
+  return function handler(event) {
+    const domElements = element.querySelectorAll(selector)
+
+    for (let { target } = event; target && target !== this; target = target.parentNode) {
+      for (let i = domElements.length; i--;) {
+        if (domElements[i] === target) {
+          event.delegateTarget = target
+
+          if (handler.oneOff) {
+            EventHandler.off(element, event.type, selector, fn)
+          }
+
+          return fn.apply(target, [event])
+        }
+      }
+    }
+
+    // To please ESLint
+    return null
+  }
+}
+
+function findHandler(events, handler, delegationSelector = null) {
+  const uidEventList = Object.keys(events)
+
+  for (let i = 0, len = uidEventList.length; i < len; i++) {
+    const event = events[uidEventList[i]]
+
+    if (event.originalHandler === handler && event.delegationSelector === delegationSelector) {
+      return event
+    }
+  }
+
+  return null
+}
+
+function normalizeParams(originalTypeEvent, handler, delegationFn) {
+  const delegation = typeof handler === 'string'
+  const originalHandler = delegation ? delegationFn : handler
+
+  let typeEvent = getTypeEvent(originalTypeEvent)
+  const isNative = nativeEvents.has(typeEvent)
+
+  if (!isNative) {
+    typeEvent = originalTypeEvent
+  }
+
+  return [delegation, originalHandler, typeEvent]
+}
+
+function addHandler(element, originalTypeEvent, handler, delegationFn, oneOff) {
+  if (typeof originalTypeEvent !== 'string' || !element) {
+    return
+  }
+
+  if (!handler) {
+    handler = delegationFn
+    delegationFn = null
+  }
+
+  // in case of mouseenter or mouseleave wrap the handler within a function that checks for its DOM position
+  // this prevents the handler from being dispatched the same way as mouseover or mouseout does
+  if (customEventsRegex.test(originalTypeEvent)) {
+    const wrapFn = fn => {
+      return function (event) {
+        if (!event.relatedTarget || (event.relatedTarget !== event.delegateTarget && !event.delegateTarget.contains(event.relatedTarget))) {
+          return fn.call(this, event)
+        }
+      }
+    }
+
+    if (delegationFn) {
+      delegationFn = wrapFn(delegationFn)
+    } else {
+      handler = wrapFn(handler)
+    }
+  }
+
+  const [delegation, originalHandler, typeEvent] = normalizeParams(originalTypeEvent, handler, delegationFn)
+  const events = getEvent(element)
+  const handlers = events[typeEvent] || (events[typeEvent] = {})
+  const previousFn = findHandler(handlers, originalHandler, delegation ? handler : null)
+
+  if (previousFn) {
+    previousFn.oneOff = previousFn.oneOff && oneOff
+
+    return
+  }
+
+  const uid = getUidEvent(originalHandler, originalTypeEvent.replace(namespaceRegex, ''))
+  const fn = delegation ?
+    bootstrapDelegationHandler(element, handler, delegationFn) :
+    bootstrapHandler(element, handler)
+
+  fn.delegationSelector = delegation ? handler : null
+  fn.originalHandler = originalHandler
+  fn.oneOff = oneOff
+  fn.uidEvent = uid
+  handlers[uid] = fn
+
+  element.addEventListener(typeEvent, fn, delegation)
+}
+
+function removeHandler(element, events, typeEvent, handler, delegationSelector) {
+  const fn = findHandler(events[typeEvent], handler, delegationSelector)
+
+  if (!fn) {
+    return
+  }
+
+  element.removeEventListener(typeEvent, fn, Boolean(delegationSelector))
+  delete events[typeEvent][fn.uidEvent]
+}
+
+function removeNamespacedHandlers(element, events, typeEvent, namespace) {
+  const storeElementEvent = events[typeEvent] || {}
+
+  Object.keys(storeElementEvent).forEach(handlerKey => {
+    if (handlerKey.includes(namespace)) {
+      const event = storeElementEvent[handlerKey]
+
+      removeHandler(element, events, typeEvent, event.originalHandler, event.delegationSelector)
+    }
+  })
+}
+
+function getTypeEvent(event) {
+  // allow to get the native events from namespaced events ('click.bs.button' --> 'click')
+  event = event.replace(stripNameRegex, '')
+  return customEvents[event] || event
+}
+
+const EventHandler = {
+  on(element, event, handler, delegationFn) {
+    addHandler(element, event, handler, delegationFn, false)
+  },
+
+  one(element, event, handler, delegationFn) {
+    addHandler(element, event, handler, delegationFn, true)
+  },
+
+  off(element, originalTypeEvent, handler, delegationFn) {
+    if (typeof originalTypeEvent !== 'string' || !element) {
+      return
+    }
+
+    const [delegation, originalHandler, typeEvent] = normalizeParams(originalTypeEvent, handler, delegationFn)
+    const inNamespace = typeEvent !== originalTypeEvent
+    const events = getEvent(element)
+    const isNamespace = originalTypeEvent.startsWith('.')
+
+    if (typeof originalHandler !== 'undefined') {
+      // Simplest case: handler is passed, remove that listener ONLY.
+      if (!events || !events[typeEvent]) {
+        return
+      }
+
+      removeHandler(element, events, typeEvent, originalHandler, delegation ? handler : null)
+      return
+    }
+
+    if (isNamespace) {
+      Object.keys(events).forEach(elementEvent => {
+        removeNamespacedHandlers(element, events, elementEvent, originalTypeEvent.slice(1))
+      })
+    }
+
+    const storeElementEvent = events[typeEvent] || {}
+    Object.keys(storeElementEvent).forEach(keyHandlers => {
+      const handlerKey = keyHandlers.replace(stripUidRegex, '')
+
+      if (!inNamespace || originalTypeEvent.includes(handlerKey)) {
+        const event = storeElementEvent[keyHandlers]
+
+        removeHandler(element, events, typeEvent, event.originalHandler, event.delegationSelector)
+      }
+    })
+  },
+
+  trigger(element, event, args) {
+    if (typeof event !== 'string' || !element) {
+      return null
+    }
+
+    const $ = (0,_util_index__WEBPACK_IMPORTED_MODULE_0__.getjQuery)()
+    const typeEvent = getTypeEvent(event)
+    const inNamespace = event !== typeEvent
+    const isNative = nativeEvents.has(typeEvent)
+
+    let jQueryEvent
+    let bubbles = true
+    let nativeDispatch = true
+    let defaultPrevented = false
+    let evt = null
+
+    if (inNamespace && $) {
+      jQueryEvent = $.Event(event, args)
+
+      $(element).trigger(jQueryEvent)
+      bubbles = !jQueryEvent.isPropagationStopped()
+      nativeDispatch = !jQueryEvent.isImmediatePropagationStopped()
+      defaultPrevented = jQueryEvent.isDefaultPrevented()
+    }
+
+    if (isNative) {
+      evt = document.createEvent('HTMLEvents')
+      evt.initEvent(typeEvent, bubbles, true)
+    } else {
+      evt = new CustomEvent(event, {
+        bubbles,
+        cancelable: true
+      })
+    }
+
+    // merge custom information in our event
+    if (typeof args !== 'undefined') {
+      Object.keys(args).forEach(key => {
+        Object.defineProperty(evt, key, {
+          get() {
+            return args[key]
+          }
+        })
+      })
+    }
+
+    if (defaultPrevented) {
+      evt.preventDefault()
+    }
+
+    if (nativeDispatch) {
+      element.dispatchEvent(evt)
+    }
+
+    if (evt.defaultPrevented && typeof jQueryEvent !== 'undefined') {
+      jQueryEvent.preventDefault()
+    }
+
+    return evt
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EventHandler);
+
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap/js/src/dom/manipulator.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/bootstrap/js/src/dom/manipulator.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v5.1.3): dom/manipulator.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+function normalizeData(val) {
+  if (val === 'true') {
+    return true
+  }
+
+  if (val === 'false') {
+    return false
+  }
+
+  if (val === Number(val).toString()) {
+    return Number(val)
+  }
+
+  if (val === '' || val === 'null') {
+    return null
+  }
+
+  return val
+}
+
+function normalizeDataKey(key) {
+  return key.replace(/[A-Z]/g, chr => `-${chr.toLowerCase()}`)
+}
+
+const Manipulator = {
+  setDataAttribute(element, key, value) {
+    element.setAttribute(`data-bs-${normalizeDataKey(key)}`, value)
+  },
+
+  removeDataAttribute(element, key) {
+    element.removeAttribute(`data-bs-${normalizeDataKey(key)}`)
+  },
+
+  getDataAttributes(element) {
+    if (!element) {
+      return {}
+    }
+
+    const attributes = {}
+
+    Object.keys(element.dataset)
+      .filter(key => key.startsWith('bs'))
+      .forEach(key => {
+        let pureKey = key.replace(/^bs/, '')
+        pureKey = pureKey.charAt(0).toLowerCase() + pureKey.slice(1, pureKey.length)
+        attributes[pureKey] = normalizeData(element.dataset[key])
+      })
+
+    return attributes
+  },
+
+  getDataAttribute(element, key) {
+    return normalizeData(element.getAttribute(`data-bs-${normalizeDataKey(key)}`))
+  },
+
+  offset(element) {
+    const rect = element.getBoundingClientRect()
+
+    return {
+      top: rect.top + window.pageYOffset,
+      left: rect.left + window.pageXOffset
+    }
+  },
+
+  position(element) {
+    return {
+      top: element.offsetTop,
+      left: element.offsetLeft
+    }
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Manipulator);
+
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap/js/src/dom/selector-engine.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/bootstrap/js/src/dom/selector-engine.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _util_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/index */ "./node_modules/bootstrap/js/src/util/index.js");
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v5.1.3): dom/selector-engine.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+/**
+ * ------------------------------------------------------------------------
+ * Constants
+ * ------------------------------------------------------------------------
+ */
+
+
+
+const NODE_TEXT = 3
+
+const SelectorEngine = {
+  find(selector, element = document.documentElement) {
+    return [].concat(...Element.prototype.querySelectorAll.call(element, selector))
+  },
+
+  findOne(selector, element = document.documentElement) {
+    return Element.prototype.querySelector.call(element, selector)
+  },
+
+  children(element, selector) {
+    return [].concat(...element.children)
+      .filter(child => child.matches(selector))
+  },
+
+  parents(element, selector) {
+    const parents = []
+
+    let ancestor = element.parentNode
+
+    while (ancestor && ancestor.nodeType === Node.ELEMENT_NODE && ancestor.nodeType !== NODE_TEXT) {
+      if (ancestor.matches(selector)) {
+        parents.push(ancestor)
+      }
+
+      ancestor = ancestor.parentNode
+    }
+
+    return parents
+  },
+
+  prev(element, selector) {
+    let previous = element.previousElementSibling
+
+    while (previous) {
+      if (previous.matches(selector)) {
+        return [previous]
+      }
+
+      previous = previous.previousElementSibling
+    }
+
+    return []
+  },
+
+  next(element, selector) {
+    let next = element.nextElementSibling
+
+    while (next) {
+      if (next.matches(selector)) {
+        return [next]
+      }
+
+      next = next.nextElementSibling
+    }
+
+    return []
+  },
+
+  focusableChildren(element) {
+    const focusables = [
+      'a',
+      'button',
+      'input',
+      'textarea',
+      'select',
+      'details',
+      '[tabindex]',
+      '[contenteditable="true"]'
+    ].map(selector => `${selector}:not([tabindex^="-"])`).join(', ')
+
+    return this.find(focusables, element).filter(el => !(0,_util_index__WEBPACK_IMPORTED_MODULE_0__.isDisabled)(el) && (0,_util_index__WEBPACK_IMPORTED_MODULE_0__.isVisible)(el))
+  }
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SelectorEngine);
+
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap/js/src/util/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/bootstrap/js/src/util/index.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getElement": () => (/* binding */ getElement),
+/* harmony export */   "getUID": () => (/* binding */ getUID),
+/* harmony export */   "getSelectorFromElement": () => (/* binding */ getSelectorFromElement),
+/* harmony export */   "getElementFromSelector": () => (/* binding */ getElementFromSelector),
+/* harmony export */   "getTransitionDurationFromElement": () => (/* binding */ getTransitionDurationFromElement),
+/* harmony export */   "triggerTransitionEnd": () => (/* binding */ triggerTransitionEnd),
+/* harmony export */   "isElement": () => (/* binding */ isElement),
+/* harmony export */   "typeCheckConfig": () => (/* binding */ typeCheckConfig),
+/* harmony export */   "isVisible": () => (/* binding */ isVisible),
+/* harmony export */   "isDisabled": () => (/* binding */ isDisabled),
+/* harmony export */   "findShadowRoot": () => (/* binding */ findShadowRoot),
+/* harmony export */   "noop": () => (/* binding */ noop),
+/* harmony export */   "getNextActiveElement": () => (/* binding */ getNextActiveElement),
+/* harmony export */   "reflow": () => (/* binding */ reflow),
+/* harmony export */   "getjQuery": () => (/* binding */ getjQuery),
+/* harmony export */   "onDOMContentLoaded": () => (/* binding */ onDOMContentLoaded),
+/* harmony export */   "isRTL": () => (/* binding */ isRTL),
+/* harmony export */   "defineJQueryPlugin": () => (/* binding */ defineJQueryPlugin),
+/* harmony export */   "execute": () => (/* binding */ execute),
+/* harmony export */   "executeAfterTransition": () => (/* binding */ executeAfterTransition)
+/* harmony export */ });
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v5.1.3): util/index.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+const MAX_UID = 1000000
+const MILLISECONDS_MULTIPLIER = 1000
+const TRANSITION_END = 'transitionend'
+
+// Shoutout AngusCroll (https://goo.gl/pxwQGp)
+const toType = obj => {
+  if (obj === null || obj === undefined) {
+    return `${obj}`
+  }
+
+  return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase()
+}
+
+/**
+ * --------------------------------------------------------------------------
+ * Public Util Api
+ * --------------------------------------------------------------------------
+ */
+
+const getUID = prefix => {
+  do {
+    prefix += Math.floor(Math.random() * MAX_UID)
+  } while (document.getElementById(prefix))
+
+  return prefix
+}
+
+const getSelector = element => {
+  let selector = element.getAttribute('data-bs-target')
+
+  if (!selector || selector === '#') {
+    let hrefAttr = element.getAttribute('href')
+
+    // The only valid content that could double as a selector are IDs or classes,
+    // so everything starting with `#` or `.`. If a "real" URL is used as the selector,
+    // `document.querySelector` will rightfully complain it is invalid.
+    // See https://github.com/twbs/bootstrap/issues/32273
+    if (!hrefAttr || (!hrefAttr.includes('#') && !hrefAttr.startsWith('.'))) {
+      return null
+    }
+
+    // Just in case some CMS puts out a full URL with the anchor appended
+    if (hrefAttr.includes('#') && !hrefAttr.startsWith('#')) {
+      hrefAttr = `#${hrefAttr.split('#')[1]}`
+    }
+
+    selector = hrefAttr && hrefAttr !== '#' ? hrefAttr.trim() : null
+  }
+
+  return selector
+}
+
+const getSelectorFromElement = element => {
+  const selector = getSelector(element)
+
+  if (selector) {
+    return document.querySelector(selector) ? selector : null
+  }
+
+  return null
+}
+
+const getElementFromSelector = element => {
+  const selector = getSelector(element)
+
+  return selector ? document.querySelector(selector) : null
+}
+
+const getTransitionDurationFromElement = element => {
+  if (!element) {
+    return 0
+  }
+
+  // Get transition-duration of the element
+  let { transitionDuration, transitionDelay } = window.getComputedStyle(element)
+
+  const floatTransitionDuration = Number.parseFloat(transitionDuration)
+  const floatTransitionDelay = Number.parseFloat(transitionDelay)
+
+  // Return 0 if element or transition duration is not found
+  if (!floatTransitionDuration && !floatTransitionDelay) {
+    return 0
+  }
+
+  // If multiple durations are defined, take the first
+  transitionDuration = transitionDuration.split(',')[0]
+  transitionDelay = transitionDelay.split(',')[0]
+
+  return (Number.parseFloat(transitionDuration) + Number.parseFloat(transitionDelay)) * MILLISECONDS_MULTIPLIER
+}
+
+const triggerTransitionEnd = element => {
+  element.dispatchEvent(new Event(TRANSITION_END))
+}
+
+const isElement = obj => {
+  if (!obj || typeof obj !== 'object') {
+    return false
+  }
+
+  if (typeof obj.jquery !== 'undefined') {
+    obj = obj[0]
+  }
+
+  return typeof obj.nodeType !== 'undefined'
+}
+
+const getElement = obj => {
+  if (isElement(obj)) { // it's a jQuery object or a node element
+    return obj.jquery ? obj[0] : obj
+  }
+
+  if (typeof obj === 'string' && obj.length > 0) {
+    return document.querySelector(obj)
+  }
+
+  return null
+}
+
+const typeCheckConfig = (componentName, config, configTypes) => {
+  Object.keys(configTypes).forEach(property => {
+    const expectedTypes = configTypes[property]
+    const value = config[property]
+    const valueType = value && isElement(value) ? 'element' : toType(value)
+
+    if (!new RegExp(expectedTypes).test(valueType)) {
+      throw new TypeError(
+        `${componentName.toUpperCase()}: Option "${property}" provided type "${valueType}" but expected type "${expectedTypes}".`
+      )
+    }
+  })
+}
+
+const isVisible = element => {
+  if (!isElement(element) || element.getClientRects().length === 0) {
+    return false
+  }
+
+  return getComputedStyle(element).getPropertyValue('visibility') === 'visible'
+}
+
+const isDisabled = element => {
+  if (!element || element.nodeType !== Node.ELEMENT_NODE) {
+    return true
+  }
+
+  if (element.classList.contains('disabled')) {
+    return true
+  }
+
+  if (typeof element.disabled !== 'undefined') {
+    return element.disabled
+  }
+
+  return element.hasAttribute('disabled') && element.getAttribute('disabled') !== 'false'
+}
+
+const findShadowRoot = element => {
+  if (!document.documentElement.attachShadow) {
+    return null
+  }
+
+  // Can find the shadow root otherwise it'll return the document
+  if (typeof element.getRootNode === 'function') {
+    const root = element.getRootNode()
+    return root instanceof ShadowRoot ? root : null
+  }
+
+  if (element instanceof ShadowRoot) {
+    return element
+  }
+
+  // when we don't find a shadow root
+  if (!element.parentNode) {
+    return null
+  }
+
+  return findShadowRoot(element.parentNode)
+}
+
+const noop = () => {}
+
+/**
+ * Trick to restart an element's animation
+ *
+ * @param {HTMLElement} element
+ * @return void
+ *
+ * @see https://www.charistheo.io/blog/2021/02/restart-a-css-animation-with-javascript/#restarting-a-css-animation
+ */
+const reflow = element => {
+  // eslint-disable-next-line no-unused-expressions
+  element.offsetHeight
+}
+
+const getjQuery = () => {
+  const { jQuery } = window
+
+  if (jQuery && !document.body.hasAttribute('data-bs-no-jquery')) {
+    return jQuery
+  }
+
+  return null
+}
+
+const DOMContentLoadedCallbacks = []
+
+const onDOMContentLoaded = callback => {
+  if (document.readyState === 'loading') {
+    // add listener on the first call when the document is in loading state
+    if (!DOMContentLoadedCallbacks.length) {
+      document.addEventListener('DOMContentLoaded', () => {
+        DOMContentLoadedCallbacks.forEach(callback => callback())
+      })
+    }
+
+    DOMContentLoadedCallbacks.push(callback)
+  } else {
+    callback()
+  }
+}
+
+const isRTL = () => document.documentElement.dir === 'rtl'
+
+const defineJQueryPlugin = plugin => {
+  onDOMContentLoaded(() => {
+    const $ = getjQuery()
+    /* istanbul ignore if */
+    if ($) {
+      const name = plugin.NAME
+      const JQUERY_NO_CONFLICT = $.fn[name]
+      $.fn[name] = plugin.jQueryInterface
+      $.fn[name].Constructor = plugin
+      $.fn[name].noConflict = () => {
+        $.fn[name] = JQUERY_NO_CONFLICT
+        return plugin.jQueryInterface
+      }
+    }
+  })
+}
+
+const execute = callback => {
+  if (typeof callback === 'function') {
+    callback()
+  }
+}
+
+const executeAfterTransition = (callback, transitionElement, waitForTransition = true) => {
+  if (!waitForTransition) {
+    execute(callback)
+    return
+  }
+
+  const durationPadding = 5
+  const emulatedDuration = getTransitionDurationFromElement(transitionElement) + durationPadding
+
+  let called = false
+
+  const handler = ({ target }) => {
+    if (target !== transitionElement) {
+      return
+    }
+
+    called = true
+    transitionElement.removeEventListener(TRANSITION_END, handler)
+    execute(callback)
+  }
+
+  transitionElement.addEventListener(TRANSITION_END, handler)
+  setTimeout(() => {
+    if (!called) {
+      triggerTransitionEnd(transitionElement)
+    }
+  }, emulatedDuration)
+}
+
+/**
+ * Return the previous/next element of a list.
+ *
+ * @param {array} list    The list of elements
+ * @param activeElement   The active element
+ * @param shouldGetNext   Choose to get next or previous element
+ * @param isCycleAllowed
+ * @return {Element|elem} The proper element
+ */
+const getNextActiveElement = (list, activeElement, shouldGetNext, isCycleAllowed) => {
+  let index = list.indexOf(activeElement)
+
+  // if the element does not exist in the list return an element depending on the direction and if cycle is allowed
+  if (index === -1) {
+    return list[!shouldGetNext && isCycleAllowed ? list.length - 1 : 0]
+  }
+
+  const listLength = list.length
+
+  index += shouldGetNext ? 1 : -1
+
+  if (isCycleAllowed) {
+    index = (index + listLength) % listLength
+  }
+
+  return list[Math.max(0, Math.min(index, listLength - 1))]
+}
+
+
+
 
 /***/ }),
 
@@ -52259,6 +54064,34 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/PagesIndex.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/pages/PagesIndex.vue ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _PagesIndex_vue_vue_type_template_id_0728d884__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PagesIndex.vue?vue&type=template&id=0728d884 */ "./resources/js/components/pages/PagesIndex.vue?vue&type=template&id=0728d884");
+/* harmony import */ var _PagesIndex_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PagesIndex.vue?vue&type=script&lang=js */ "./resources/js/components/pages/PagesIndex.vue?vue&type=script&lang=js");
+/* harmony import */ var C_Users_Smarandache_Stefan_Sites_laravel_crud_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,C_Users_Smarandache_Stefan_Sites_laravel_crud_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_PagesIndex_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_PagesIndex_vue_vue_type_template_id_0728d884__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/pages/PagesIndex.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/components/store/StoreCategoryView.vue":
 /*!*************************************************************!*\
   !*** ./resources/js/components/store/StoreCategoryView.vue ***!
@@ -52591,6 +54424,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/PagesIndex.vue?vue&type=script&lang=js":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/pages/PagesIndex.vue?vue&type=script&lang=js ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PagesIndex_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PagesIndex_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./PagesIndex.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/pages/PagesIndex.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/store/StoreCategoryView.vue?vue&type=script&lang=js":
 /*!*************************************************************************************!*\
   !*** ./resources/js/components/store/StoreCategoryView.vue?vue&type=script&lang=js ***!
@@ -52811,6 +54660,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_LoginIndex_vue_vue_type_template_id_d6d0778c__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_LoginIndex_vue_vue_type_template_id_d6d0778c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./LoginIndex.vue?vue&type=template&id=d6d0778c */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/login/LoginIndex.vue?vue&type=template&id=d6d0778c");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/PagesIndex.vue?vue&type=template&id=0728d884":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/pages/PagesIndex.vue?vue&type=template&id=0728d884 ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PagesIndex_vue_vue_type_template_id_0728d884__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_PagesIndex_vue_vue_type_template_id_0728d884__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./PagesIndex.vue?vue&type=template&id=0728d884 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/pages/PagesIndex.vue?vue&type=template&id=0728d884");
 
 
 /***/ }),

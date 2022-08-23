@@ -17,8 +17,7 @@ class GeneralRequest
     }
     public static function getRequest()
     {
-        $req = request()->all()[0];
-        return $req['name'];
+        return request()->all()[0];
     }
 
 }

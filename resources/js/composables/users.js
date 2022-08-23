@@ -35,7 +35,7 @@ export default function useUsers() {
         try {
             console.log(user.value)
             await axios.post('/api/users/save/' + id, user.value)
-            await router.push({name: 'users.index'})
+            //await router.push({name: 'users.index'})
         } catch (e) {
             if (e.response.status === 422) {
                 errors.value = e.response.data.errors
