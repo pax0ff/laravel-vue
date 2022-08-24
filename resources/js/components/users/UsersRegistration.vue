@@ -54,7 +54,6 @@
 
                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
                                          class="img-fluid" alt="Sample image">
-
                                 </div>
                             </div>
                         </div>
@@ -70,7 +69,6 @@ import { reactive } from "vue";
 import useUsers from "../../composables/users";
 
 export default {
-    // password:'',
     setup() {
         const form = reactive({
             'name': '',

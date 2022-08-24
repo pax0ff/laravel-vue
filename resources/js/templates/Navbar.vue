@@ -10,6 +10,7 @@
                     <a class="nav-item nav-link" href="/companies">Parteneri</a>
                     <a class="nav-item nav-link" href="/users">Useri</a>
                     <a class="nav-item nav-link" href="/users/login">Intra in cont</a>
+                    <a class="nav-item nav-link" href="/users/logout">Logout</a>
                     <a class="nav-item nav-link" href="/users/register">Inregistreaza-te</a>
 <!--                    <a class="nav-item nav-link" href="/dashboard">Dashboard</a>-->
                     <a class="nav-item nav-link" href="/store">Produsele noastre</a>

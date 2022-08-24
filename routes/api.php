@@ -29,6 +29,18 @@ Route::get('/users',function() {
 Route::get('/users/{id}',function (){
         return UserModel::getUser();
 });
+Route::delete('/users/{id}',function (){
+    return UserModel::deleteUser();
+});
+Route::post('/users/login',function () {
+    return UserModel::loginUser();
+});
+Route::post('/users/logout',function() {
+    return UserModel::logoutUser();
+});
+Route::post('/users/register',function() {
+   return UserModel::registerUser();
+});
 
 Route::post('/users/save/{id}',function() {
     return UserModel::saveUser();

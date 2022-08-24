@@ -20,4 +20,19 @@ class GeneralRequest
         return request()->all()[0];
     }
 
+    public static function getUserDataFromRequest(): array
+    {
+        return array([
+            'name' => request('name'),
+            'email'=>request('email'),
+            'password'=>request('password'),
+            'created_at'=>date('Y-m-d h:m:s'),
+            'updated_at'=>date('Y-m-d h:m:s')
+        ]);
+    }
+
+    public static function getUserLoginDataFromRequest(): array {
+        return request()->only('email','password');
+    }
+
 }

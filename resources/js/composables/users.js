@@ -13,6 +13,18 @@ export default function useUsers() {
         users.value = response.data;
     }
 
+    const logUser = async (data) => {
+        errors.value=''
+        try {
+            await axios.post('/api/users/login', data)
+            await router.push({name: 'pages.index'})
+        } catch (e) {
+            if (e.response.status === 422) {
+                errors.value = e.response.data.errors
+            }
+        }
+    }
+
     const getUser = async (id) => {
         let response = await axios.get('/api/users/' + id)
         user.value = response.data;
@@ -21,8 +33,8 @@ export default function useUsers() {
     const storeUser = async (data) => {
         errors.value = ''
         try {
-            await axios.post('/api/users', data)
-            await router.push({name: 'users.index'})
+            await axios.post('/api/users/register', data)
+            await router.push({name: 'pages.index'})
         } catch (e) {
             if (e.response.status === 422) {
                 errors.value = e.response.data.errors
@@ -66,6 +78,7 @@ export default function useUsers() {
         storeUser,
         updateUser,
         destroyUser,
-        deleteUser
+        deleteUser,
+        logUser
     }
 }
