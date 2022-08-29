@@ -4,7 +4,11 @@ use Illuminate\Http\Request as Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\User as UserModel;
 use App\Models\Products as ProductsModel;
-
+use App\Http\Controllers\UserController as UserController;
+use App\Http\Controllers\ProductController as ProductController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,28 +26,21 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //Users Routes
 
-Route::get('/users',function() {
-    return UserModel::getUsers();
-});
+Route::get('/users',[UserController::class,'getUsers']);
 
 Route::get('/users/{id}',function (){
-        return UserModel::getUser();
+    return UserController::getUser();
 });
 Route::delete('/users/{id}',function (){
-    return UserModel::deleteUser();
-});
-Route::post('/users/login',function () {
-    return UserModel::loginUser();
-});
-Route::post('/users/logout',function() {
-    return UserModel::logoutUser();
-});
-Route::post('/users/register',function() {
-   return UserModel::registerUser();
+    return UserController::delete();
 });
 
+Route::post('/users/login',[LoginController::class,'login']);
+Route::get('/users/logout',[LogoutController::class,'perform']);
+Route::post('/users/register',[RegisterController::class,'register']);
+
 Route::post('/users/save/{id}',function() {
-    return UserModel::saveUser();
+    return UserController::save();
 });
 
 //End Users Routes
@@ -54,16 +51,16 @@ Route::post('/users/save/{id}',function() {
 //Products Routes
 
 Route::get('products',function() {
-    return ProductsModel::getProductsData();
+    return ProductController::getAllProducts();
 
 });
 
 Route::get('/products/{id}',function(){
-    return ProductsModel::getProduct();
+    return ProductController::getProduct();
 });
 
 Route::get('/products/category/{categ}',function(){
-    return ProductsModel::getProductByCategory();
+    return ProductController::getAllProductsFromCategory();
 });
 //End Products Routes
 

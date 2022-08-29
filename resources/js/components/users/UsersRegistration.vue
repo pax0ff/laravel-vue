@@ -21,6 +21,14 @@
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center mb-4">
+                                            <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                            <div class="form-outline flex-fill mb-0">
+                                                <input type="text" id="username" class="form-control" v-model="form.username"/>
+                                                <label class="form-label" for="form3Example1c">Username</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
                                                 <input type="email" id="email" class="form-control" v-model="form.email"/>
@@ -72,6 +80,7 @@ export default {
     setup() {
         const form = reactive({
             'name': '',
+            'username': '',
             'email': '',
             'password': '',
         })

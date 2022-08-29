@@ -22,8 +22,9 @@ class User extends Authenticatable
 
     protected $fillable = [
         'name',
+        'username',
         'email',
-        'password',
+        'password'
     ];
 
 
@@ -36,6 +37,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = bcrypt($value);
+    }
 
     public static function userExists($id) {
 
@@ -55,55 +61,6 @@ class User extends Authenticatable
             ->get();
     }
 
-
-    public static function saveUser() {
-
-//        $req = GeneralRequest::getRequest();
-//        dd($req);
-//        $query = DB::table('users')
-//            ->where('id', '=',GeneralRequest::getUserIdFromRequest())
-//            ->update(['name'=> 'asd1232224','email'=>'asd@a.com']);
-        //return $query;
-    }
-    public static function loginUser() {
-        $requestData = GeneralRequest::getUserLoginDataFromRequest();
-        //dd(empty($requestData));
-//        if(!empty($requestData)) {
-//            $email = $requestData['email'];
-//            $password = $requestData['password'];
-//            if($email && $password) {
-//                $data = DB::table('users')
-//                    ->where('users.email', '=', $email)
-//                    ->where('users.password', '=', $password)
-//                    ->get()[0];
-//
-//                if ($data) {
-//                    Session::put('name', $data->name);
-//                    //Redirect::to('/');
-//                }
-//            }
-//        }
-    }
-
-    public static function logoutUser() {
-        $ses = Session::get('name');
-        //Redirect::to('/');
-    }
-
-    public static function registerUser() {
-        $requestData = GeneralRequest::getUserDataFromRequest();
-        if(!empty($requestData)) {
-            try {
-                $query = DB::table('users')->insert($requestData);
-                if($query) {
-                    return $query;
-                }
-            }
-            catch(Throwable $e){
-                $e->getMessage();
-            }
-        }
-    }
 
     public static function deleteUser() {
         $id = GeneralRequest::getUserIdFromRequest();
