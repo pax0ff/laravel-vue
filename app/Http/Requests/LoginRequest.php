@@ -24,7 +24,7 @@ return true;
 public function rules()
 {
 return [
-'username' => 'required',
+'email' => 'required',
 'password' => 'required'
 ];
 }

@@ -35,9 +35,13 @@ Route::delete('/users/{id}',function (){
     return UserController::delete();
 });
 
-Route::post('/users/login',[LoginController::class,'login']);
-Route::get('/users/logout',[LogoutController::class,'perform']);
-Route::post('/users/register',[RegisterController::class,'register']);
+Route::group(['middleware' => ['web']], function () {
+    Route::post('/users/login',[LoginController::class,'login']);
+    Route::get('/users/logout',[LogoutController::class,'perform']);
+    Route::post('/users/register',[RegisterController::class,'register']);
+});
+
+
 
 Route::post('/users/save/{id}',function() {
     return UserController::save();

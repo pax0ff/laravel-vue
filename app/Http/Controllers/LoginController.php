@@ -10,17 +10,20 @@ class LoginController extends Controller
 {
     public function login(LoginRequest $request)
     {
-        $credentials = $request->getCredentials();
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
 
-        if(!Auth::validate($credentials)):
-            return redirect()->to('login')
-                ->withErrors(trans('auth.failed'));
-        endif;
+        if (Auth::attempt($credentials)) {
+            $request->session()->start();
 
-        $user = Auth::getProvider()->retrieveByCredentials($credentials);
-        Auth::login($user);
+            return redirect()->intended('/dashboard');
+        }
 
-        return $this->authenticated($request, $user);
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ])->onlyInput('email');
     }
 
     /**
