@@ -32170,6 +32170,17 @@ select {
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
 
+@media only screen and (min-width: 1199px) {
+  .vueperslide__title {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

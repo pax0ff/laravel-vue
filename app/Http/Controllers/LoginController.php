@@ -18,7 +18,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->start();
 
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/users');
         }
 
         return back()->withErrors([
@@ -34,7 +34,7 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\RedirectResponse
      */
-    protected function authenticated(Request $request, Auth $user)
+    protected function authenticated(Request $request, Auth $user): \Illuminate\Http\RedirectResponse
     {
         return redirect()->intended();
     }

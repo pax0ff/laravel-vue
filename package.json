@@ -34,6 +34,7 @@
         "bootstrap-icons-vue": "^1.8.1",
         "vue": "^3.2.19",
         "vue-loader": "^16.8.1",
-        "vue-router": "^4.0.11"
+        "vue-router": "^4.0.11",
+        "vueperslides": "^3.4.2"
     }
 }

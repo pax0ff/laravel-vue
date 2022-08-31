@@ -11,9 +11,15 @@ import LoginIndex from "./components/login/LoginIndex";
 import StoreIndex from "./components/store/StoreIndex";
 import StoreProductView from "./components/store/StoreProductView";
 import StoreCategoryView from "./components/store/StoreCategoryView";
+// import VueperSlides from 'vueperslides';
+// import VueperSlide from 'vueperslides';
+// import 'vueperslides/dist/vueperslides.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+
 createApp({
     components: {
+        // VueperSlides,
+        // VueperSlide,
         CompaniesIndex,
         UsersIndex,
         LoginIndex,
@@ -22,4 +28,7 @@ createApp({
         Navbar,
         StoreCategoryView
     }
-}).use(routes,Bootstrap,jqr,BootstrapJS).mount('#app')
+}).use(routes,
+    Bootstrap,jqr,BootstrapJS,
+    // VueperSlides,VueperSlide
+).mount('#app')

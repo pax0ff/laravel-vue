@@ -35,4 +35,11 @@ class GeneralRequest
         return request()->only('email','password');
     }
 
+    public static function getPostIdFromRequest(): int {
+        return intval(request('id'));
+    }
+    public static function getPostCategoryNameFromRequest() {
+        return request('category');
+    }
+
 }

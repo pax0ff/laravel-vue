@@ -20,4 +20,12 @@ class Category extends \Illuminate\Database\Eloquent\Model
             ->first();
         return $categoryIdQuery->id;
     }
+
+    public static function getCategoryPostsId() {
+        $categoryIdQuery = DB::table('category_posts')
+            ->selectRaw('category_posts.id')
+            ->where('category_posts.name','=',GeneralRequest::getPostCategoryNameFromRequest())
+            ->first();
+        return $categoryIdQuery->id;
+    }
 }

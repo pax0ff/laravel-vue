@@ -51,7 +51,7 @@ class ProductSeeder extends Seeder
 
     private function setProductImage(): string
     {
-        return 'https://picsum.photos/200/300';
+        return 'https://picsum.photos/1000/1000';
     }
 
     private function setProductCurrency(): string

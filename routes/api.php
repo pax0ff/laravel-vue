@@ -9,6 +9,7 @@ use App\Http\Controllers\ProductController as ProductController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -69,8 +70,18 @@ Route::get('/products/category/{categ}',function(){
 //End Products Routes
 
 
+// Post routes
+
+Route::get('/posts',[BlogController::class,'limitedPosts']);
+
+Route::get('/posts/{id}',[BlogController::class,'post']);
+
+Route::get('/posts/{category}',[BlogController::class,'']);
+
+//END Post Routes
 
 
+Route::get('/dashboard',[]);
 
 
 /* Cart - get all products from cart */
