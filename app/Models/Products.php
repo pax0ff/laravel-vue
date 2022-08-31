@@ -18,14 +18,14 @@ class Products extends Model
      *
      * @return \Faker\Generator
      */
-    private static function initFaker(): \Faker\Generator
+    private static function Faker(): \Faker\Generator
     {
         return Faker\Factory::create();
 
     }
     private function setProductName(): string
     {
-        return $this->initFaker()->bothify('S????');
+        return $this->Faker()->bothify('S????');
     }
 
     private function setProductCategory(): int
@@ -35,7 +35,7 @@ class Products extends Model
 
     private function setProductSKU(): string
     {
-        return $this->initFaker()->bothify('SKU####');
+        return $this->Faker()->bothify('SKU####');
     }
 
     private function setProductPrice(): int
@@ -69,7 +69,7 @@ class Products extends Model
     }
 
     private function setProductDescription(): string {
-        return $this->initFaker()->text(30);
+        return $this->Faker()->text(30);
     }
 
     public static function getProductsData(): \Illuminate\Support\Collection
