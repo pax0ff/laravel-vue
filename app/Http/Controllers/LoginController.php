@@ -15,15 +15,18 @@ class LoginController extends Controller
             'password' => ['required'],
         ]);
 
-        if (Auth::attempt($credentials)) {
-            $request->session()->start();
-
-            return redirect()->intended('/users');
+        if (!Auth::attempt($credentials)) {
+            return response([
+                'error' => 'The Provided credentials are not correct'
+            ], 422);
         }
+        $user = Auth::user();
+        $token = $user->createToken('main')->plainTextToken;
 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+        return response([
+            'user' => $user,
+            'token' => $token
+        ]);
     }
 
     /**

@@ -22824,7 +22824,11 @@ function useUsers() {
               errors.value = '';
               _context2.prev = 1;
               _context2.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/users/login', data);
+              return axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/users/login', data).then(function (response) {
+                console.log(response.request.responseURL);
+                var qq = response.request.responseURL;
+                window.location.href = qq;
+              });
 
             case 4:
               _context2.next = 6;
@@ -23085,6 +23089,17 @@ var routes = [{
   name: 'companies.index',
   component: _components_companies_CompaniesIndex__WEBPACK_IMPORTED_MODULE_0__["default"]
 }, {
+  path: '/companies',
+  name: 'companies.index',
+  component: _components_companies_CompaniesIndex__WEBPACK_IMPORTED_MODULE_0__["default"],
+  children: [{
+    path: '/companies/create',
+    component: 'companies.create',
+    meta: {
+      requiresAuth: true
+    }
+  }]
+}, {
   path: '/companies/create',
   name: 'companies.create',
   component: _components_companies_CompaniesCreate__WEBPACK_IMPORTED_MODULE_1__["default"]
@@ -23140,6 +23155,19 @@ var routes = [{
 var route = (0,vue_router__WEBPACK_IMPORTED_MODULE_14__.createRouter)({
   history: (0,vue_router__WEBPACK_IMPORTED_MODULE_14__.createWebHistory)(),
   routes: routes
+});
+route.beforeEach(function (to, from) {
+  if (to.meta.requiresAuth && !store.state.user.token) {
+    next({
+      name: 'Login'
+    });
+  } else if (store.state.user.token && to.meta.isGuest) {
+    next({
+      name: 'Home'
+    });
+  } else {
+    next();
+  }
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (route);
 

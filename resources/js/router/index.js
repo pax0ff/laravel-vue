@@ -26,6 +26,18 @@ const routes = [
         component: CompaniesIndex
     },
     {
+        path: '/companies',
+        name: 'companies.index',
+        component: CompaniesIndex,
+        children: [
+            {
+                path: '/companies/create',
+                component: 'companies.create',
+                meta: { requiresAuth: true }
+            }
+        ]
+    },
+    {
         path: '/companies/create',
         name: 'companies.create',
         component: CompaniesCreate
@@ -97,5 +109,14 @@ const route =  createRouter({
     routes: routes
 })
 
+route.beforeEach((to, from) => {
+    if (to.meta.requiresAuth && !store.state.user.token) {
+        next({name: 'Login'});
+    } else if (store.state.user.token && (to.meta.isGuest)) {
+        next({name: 'Home'});
+    } else {
+        next();
+    }
+})
 export default route;
 

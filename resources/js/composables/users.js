@@ -16,7 +16,11 @@ export default function useUsers() {
     const logUser = async (data) => {
         errors.value=''
         try {
-            await axios.post('/api/users/login', data)
+            await axios.post('/api/users/login', data).then(response =>{
+                console.log(response.request.responseURL)
+                let qq = response.request.responseURL
+                window.location.href = qq
+            })
             await router.push({name: 'pages.index'})
         } catch (e) {
             if (e.response.status === 422) {
